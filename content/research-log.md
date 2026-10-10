@@ -70,6 +70,16 @@ Source purposes are displayed individually in the app and document. Some referen
 
 Early texts and non-narrative prose also appear in author guides. Their absence from a twelve-card plot retelling does not mean the lecture has been omitted. The raw lecture scans, OCR, source retrieval attempts and runtime screenshots stay in the local QA folder.
 
+## Narration review and revision · 11 October 2026
+
+All 44 twelve-card sequences (528 English passages) were read for continuity, accessible scene-setting, character motivation, forward momentum and truthful endings. Revised passages were edited in both English and Bengali; existing translations of the retained cards remain unchanged. The library hooks already establish a clear curiosity gap. The main weakness was the textbook tone of several introductions, with abstract commentary arriving before a reader could picture a place or action.
+
+The first two cards of all 44 works and two additional Postmaster cards were rewritten in both languages: 90 bilingual passages in total. The revisions use the existing plot facts, introduce people through actions, and connect immediate needs to the next event. Later cards were retained where their sequence and emotional consequence were already clear. Six poem journeys still explain images and ideas rather than inventing plots. No invented dialogue, new plot event, rescued ending or claim that an unresolved fate is settled was added. Card headings, scene ordering, illustrations, appearance notes, source links and quizzes are unchanged.
+
+The editable revisions are kept in the local content/narration-revisions.json, applied by the local content generator. They are not additional deployment dependencies: the published app receives the revised prose in content.js. A review ledger and original catalogue snapshot remain in local QA.
+
+Installed-app UI now hides the installation promotion in standalone, minimal-ui, fullscreen, window-controls-overlay and iOS standalone launches, and after the appinstalled event. Display-mode changes and pageshow refresh the control. This follows [Chrome's PWA detection guidance](https://web.dev/learn/pwa/detection/). Installation state is not permanently inferred from an old local-storage flag, so a stale flag cannot prevent a future reinstall.
+
 ## Storybook appearance audit · 10 October 2026
 
 All 44 works have a separate twelve-scene illustrated atlas, generated with the built-in image_gen tool. The web reader displays individual panels; the Word companion contains the same twelve-panel overview. Character faces remain consistent within each work. Colour prejudice in a narrative is retained for critical reading and is never treated as a measure of virtue.

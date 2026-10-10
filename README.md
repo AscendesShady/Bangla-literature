@@ -30,13 +30,14 @@ No server, API key, npm build, database or paid service is required. The reposit
 - The reader supports Previous/Next, arrow keys, numbered card jumps and Escape to close. On touchscreens, swipe left for the next scene and right for the previous one; vertical scrolling and pinch zoom remain available. Continue appears only for stories started but not completed; every story opens by clicking its card or keyboard-accessible title.
 - Progress counts distinct cards opened, not time spent reading. Returning resumes the last card. **Unread** means no cards opened.
 - Each work has three questions with explanations. Best scores persist in this browser.
+- The Install app control is shown in an ordinary browser and hidden when launched as an installed app or after installation. Returning from an app window to browser mode updates the control.
 - Export/import progress transfers a JSON backup between browsers. Import merges saved works, reading progress and best scores. No information is uploaded.
 
 ## Content and companion document
 
 The lecture map covers 18 scanned PDF files / 582 pages. The app is a curated guide, not an exhaustive transcription of every lecture fact or exam question. Author guides list additional works without promising a twelve-card retelling for every listed title. Poetry cards explain images and ideas without inventing a plot.
 
-In the local development workspace, `content/catalog.json` and `content.js` are generated together from `tools/build_content.py` and the hand-authored `content/stories_*.py` files. The local `Bangla Literature Companion.docx` contains the same timeline, author lists, cards, cast, quizzes and source notes. The published site uses `content.js` and excludes the Word document and Python sources.
+In the local development workspace, `content/catalog.json` and `content.js` are generated together from `tools/build_content.py` and the hand-authored `content/stories_*.py` files. The local `content/narration-revisions.json` supplies reviewed narration edits; the first two cards of every work set a concrete scene and establish forward momentum. The local `Bangla Literature Companion.docx` contains the same timeline, author lists, cards, cast, quizzes and source notes. The published site uses `content.js` and excludes the Word document and Python sources.
 
 See `content/research-log.md` for verification scope, corrections and lecture coverage. Primary texts, university materials, Banglapedia, library records and author interviews serve different purposes; publication metadata is not treated as proof of a plot.
 
