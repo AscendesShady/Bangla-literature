@@ -1,57 +1,76 @@
 'use strict';
-// Short utterances avoid long-text cutoffs in mobile speech engines.
+// Finished neural recordings are shared by every device; no device speech is used.
 (() => {
-const synth=window.speechSynthesis,supported=!!synth&&typeof window.SpeechSynthesisUtterance==='function';
-const KEY='bangla-literature-voice';
-const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let settings={voice:'',rate:.85};
-try{const saved=JSON.parse(localStorage.getItem(KEY));if(saved){settings.voice=typeof saved.voice==='string'?saved.voice:'';if([.75,.85,1].includes(saved.rate))settings.rate=saved.rate}}catch{}
-let voices=[],card=null,chunks=[],position=0,mode='idle',generation=0,utterance=null,startTimer=null;
-const el=id=>document.getElementById(id);
-function persist(){try{localStorage.setItem(KEY,JSON.stringify(settings))}catch{}}
-function selectedVoice(){return voices.find(v=>v.voiceURI===settings.voice)||voices.find(v=>v.localService&&/samantha|serena|zira|hazel|karen|aria/i.test(v.name))||voices.find(v=>v.localService)||voices.find(v=>v.default)||voices[0]}
-function sync(message){
+const AUDIO_CACHE='bangla-literature-audio-v1',KEY='bangla-literature-recorded-audio-v1';
+let rate=1;try{const saved=JSON.parse(localStorage.getItem(KEY));if([.9,1,1.1].includes(saved?.rate))rate=saved.rate}catch{}
+let audio=null,card=null,story=null,mode='idle',generation=0,savedCount=0,statusMessage='',downloads=new Set();
+const el=id=>document.getElementById(id),supportsCache='caches' in window&&window.isSecureContext;
+const time=n=>`${Math.floor((n||0)/60)}:${String(Math.floor((n||0)%60)).padStart(2,'0')}`;
+function persist(){try{localStorage.setItem(KEY,JSON.stringify({rate}))}catch{}}
+function progress(){if(!el('narration-position'))return;const duration=Number.isFinite(audio?.duration)?audio.duration:card?.narration?.duration||0,current=audio?.currentTime||0;el('narration-position').value=String(duration?Math.round(current/duration*1000):0);el('narration-position').setAttribute('aria-valuetext',`${time(current)} of ${time(duration)}`);el('narration-time').textContent=`${time(current)} / ${time(duration)}`;el('narration-position').disabled=!card?.narration;}
+function sync(){
  if(!el('listen-card'))return;
- const unavailable=!supported||(synth.getVoices().length>0&&!voices.length);
- el('listen-card').disabled=unavailable;el('listen-card').textContent=mode==='paused'?'▶ Resume English':mode==='speaking'?'↺ Restart English':'▶ Listen in English';
- el('pause-card').hidden=mode!=='speaking';el('stop-card').hidden=mode==='idle';
- const v=selectedVoice();
- el('narration-status').textContent=message||(unavailable?'English narration is unavailable on this device.':mode==='speaking'?'Reading this card in English…':mode==='paused'?'Paused. Resume continues from this sentence.':v&&!v.localService?'Gentle English voice · this voice may need internet.':'Gentle English voice · device voices can work offline.');
+ const available=!!card?.narration;
+ el('listen-card').disabled=!available||mode==='loading';el('listen-card').textContent=mode==='paused'?'▶ Resume English':mode==='playing'?'↺ Replay English':mode==='loading'?'Loading audio…':'▶ Listen in English';
+ el('pause-card').hidden=mode!=='playing';el('stop-card').hidden=!['playing','paused','loading'].includes(mode);
+ const downloading=downloads.has(story?.id),allSaved=savedCount===12;
+ el('save-narration').disabled=!available||!supportsCache||downloading||allSaved;
+ el('save-narration').textContent=downloading?'Saving narration…':allSaved?'✓ Narration saved offline':'↓ Save story audio offline';
+ el('narration-status').textContent=statusMessage||(mode==='playing'?'Recorded English narration · Heart voice':mode==='paused'?'Paused. Resume continues where you stopped.':mode==='loading'?'Loading the recorded narration…':'Natural English recording · Heart voice · gentle pace');
+ el('audio-offline-status').textContent=supportsCache?`Offline audio: ${savedCount}/12 cards saved`:'Offline audio saving needs HTTPS or localhost.';
+ progress();
 }
-function refreshVoices(){
- if(!supported)return;
- voices=synth.getVoices().filter(v=>/^en(?:[-_]|$)/i.test(v.lang)).sort((a,b)=>Number(b.localService)-Number(a.localService)||a.name.localeCompare(b.name));
- const select=el('narration-voice');if(select){select.innerHTML=voices.length?voices.map(v=>`<option value="${esc(v.voiceURI)}">${esc(v.name)} (${esc(v.lang)}) · ${v.localService?'device':'online'}</option>`).join(''):'<option value="">Default English voice</option>';select.value=selectedVoice()?.voiceURI||'';select.disabled=!voices.length;}
- sync();
+async function refreshSaved(){
+ const id=story?.id;if(!id||!supportsCache){savedCount=0;sync();return}
+ try{const cache=await caches.open(AUDIO_CACHE),results=await Promise.all(story.cards.map(c=>c.narration?cache.match(new URL('./'+c.narration.asset,location.href).href):null));if(story?.id===id){savedCount=results.filter(Boolean).length;sync()}}catch{if(story?.id===id){savedCount=0;sync()}}
 }
-function stop(){generation++;clearTimeout(startTimer);if(supported){synth.cancel();synth.resume()}utterance=null;mode='idle';position=0;sync()}
-function speakChunk(token){
- if(token!==generation||mode!=='speaking')return;
- if(position>=chunks.length){utterance=null;mode='idle';position=0;sync('Card finished. Listen again whenever you like.');return}
- const v=selectedVoice();if(!navigator.onLine&&v&&!v.localService){stop();sync('This voice needs internet. Choose a device voice for offline listening.');return}
- utterance=new SpeechSynthesisUtterance(chunks[position]);utterance.lang=v?.lang||'en-US';if(v)utterance.voice=v;utterance.rate=settings.rate;utterance.pitch=1;utterance.volume=.85;
- utterance.onstart=()=>{if(token===generation)clearTimeout(startTimer)};
- utterance.onend=()=>{if(token!==generation)return;clearTimeout(startTimer);position++;speakChunk(token)};
- utterance.onerror=e=>{if(token!==generation)return;stop();sync(e.error==='not-allowed'?'Tap Listen again to enable audio.':'The voice could not play. Try another English voice on this device.')};
- clearTimeout(startTimer);startTimer=setTimeout(()=>{if(token===generation){stop();sync('The voice did not start. Try another English voice or tap Listen again.')}},12000);
- synth.speak(utterance);
+function stop(){generation++;if(audio){audio.pause();audio.removeAttribute('src');audio.load()}audio=null;mode='idle';statusMessage='';sync()}
+function dispose(){stop()}
+function prepareAudio(){
+ if(audio||!card?.narration)return;
+ const token=generation;
+ audio=new Audio();audio.preload='none';audio.src=new URL('./'+card.narration.asset,location.href).href;audio.playbackRate=rate;
+ const valid=()=>token===generation;
+ audio.addEventListener('playing',()=>{if(valid()){mode='playing';statusMessage='';sync();refreshSaved()}});
+ audio.addEventListener('timeupdate',()=>{if(valid())progress()});
+ audio.addEventListener('loadedmetadata',()=>{if(valid())progress()});
+ audio.addEventListener('ended',()=>{if(valid()){mode='idle';statusMessage='Card finished. Listen again whenever you like.';sync();refreshSaved()}});
+ audio.addEventListener('waiting',()=>{if(valid()&&mode==='playing'){statusMessage='Buffering the recorded narration…';sync()}});
+ audio.addEventListener('error',()=>{if(valid()){mode='idle';statusMessage=navigator.onLine?'The recording could not load. Try again when the connection is ready.':'This card’s audio is not saved yet. Go online and choose Save story audio offline.';sync()}});
 }
-function listen(){
- if(!supported||!card)return;
- if(mode!=='paused'){stop();chunks=(`${card.heading.en}. ${card.en}`).match(/[^.!?]+[.!?]+(?:[”"’']*)|[^.!?]+$/g)?.map(t=>t.trim()).filter(Boolean)||[card.en];position=0}
- mode='speaking';const token=++generation;synth.resume();sync();speakChunk(token);
+async function listen(){
+ if(!card?.narration)return;
+ if((mode==='playing'||mode==='idle')&&audio&&Number.isFinite(audio.duration))audio.currentTime=0;
+ if(audio?.error)audio.load();
+ prepareAudio();const token=generation;mode='loading';statusMessage='';sync();
+ try{await audio.play();if(token===generation){mode='playing';sync()}}catch(error){if(token===generation){mode='idle';statusMessage=error.name==='NotAllowedError'?'Tap Listen again to enable audio.':navigator.onLine?'The recording could not play. Tap Listen to try again.':'This audio is not saved yet. Go online to save the story narration.';sync()}}
 }
-function pause(){
- if(mode!=='speaking')return;
- // Cancel/resume at the current sentence works on engines without native pause.
- generation++;clearTimeout(startTimer);synth.cancel();utterance=null;mode='paused';sync();
+function pause(){if(!audio||!['playing','loading'].includes(mode))return;audio.pause();mode='paused';statusMessage='';sync()}
+async function saveStoryAudio(){
+ if(!supportsCache||!story||downloads.has(story.id))return;
+ const target=story,id=target.id;downloads.add(id);statusMessage='Saving all 12 recordings for offline listening…';sync();
+ let count=0;
+ try{
+  const cache=await caches.open(AUDIO_CACHE);
+  for(let i=0;i<target.cards.length;i+=3){
+   await Promise.all(target.cards.slice(i,i+3).map(async c=>{
+    if(!c.narration)throw Error('Recording unavailable');
+    const url=new URL('./'+c.narration.asset,location.href).href;
+    if(!await cache.match(url)){const response=await fetch(url);if(!response.ok||response.status===206)throw Error('Download failed');await cache.put(url,response)}
+    count++;
+    if(story?.id===id){savedCount=count;statusMessage=`Saving narration: ${count}/12 cards…`;sync()}
+   }));
+  }
+  if(story?.id===id)statusMessage='All 12 recordings saved. This story is ready for offline listening.';
+ }catch{if(story?.id===id)statusMessage='Some audio could not be saved. Reconnect and try again; finished downloads are kept.'}
+ finally{downloads.delete(id);if(story?.id===id){sync();await refreshSaved()}}
 }
-function markup(){return `<section class="narration" aria-label="English card narration"><div class="narration-actions"><button id="listen-card" type="button">▶ Listen in English</button><button id="pause-card" type="button" hidden>Ⅱ Pause</button><button id="stop-card" type="button" hidden>■ Stop</button></div><details><summary>Voice &amp; pace</summary><div class="narration-settings"><label>English voice<select id="narration-voice"></select></label><label>Pace<select id="narration-rate"><option value="0.75">Unhurried</option><option value="0.85">Gentle</option><option value="1">Normal</option></select></label></div></details><p id="narration-status" class="note" role="status" aria-live="polite"></p></section>`}
-function mount(c){stop();card=c;if(!c)return;el('narration-rate').value=String(settings.rate);refreshVoices();sync();if(!supported)el('narration-rate').disabled=true}
-document.addEventListener('click',e=>{const id=e.target.closest('button')?.id;if(id==='listen-card')listen();else if(id==='pause-card')pause();else if(id==='stop-card')stop()});
-document.addEventListener('change',e=>{if(e.target.id==='narration-voice'){stop();settings.voice=e.target.value;persist();sync()}else if(e.target.id==='narration-rate'){stop();settings.rate=Number(e.target.value);persist();sync()}});
-document.addEventListener('visibilitychange',()=>{if(document.hidden)stop()});
-window.addEventListener('pagehide',stop);
-if(supported){synth.addEventListener('voiceschanged',refreshVoices);refreshVoices()}
+function markup(){return `<section class="narration" aria-label="Recorded English card narration"><div class="narration-actions"><button id="listen-card" type="button">▶ Listen in English</button><button id="pause-card" type="button" hidden>Ⅱ Pause</button><button id="stop-card" type="button" hidden>■ Stop</button></div><div class="audio-progress"><label class="sr-only" for="narration-position">Seek within this card’s narration</label><input id="narration-position" type="range" min="0" max="1000" step="1" value="0"><span id="narration-time">0:00</span></div><div class="audio-tools"><label for="narration-rate">Playback pace</label><select id="narration-rate"><option value="0.9">Slower</option><option value="1">Gentle original</option><option value="1.1">A little faster</option></select></div><p id="narration-status" class="note" role="status" aria-live="polite"></p><div class="audio-offline"><button id="save-narration" type="button">↓ Save story audio offline</button><span id="audio-offline-status" class="note"></span></div></section>`}
+function mount(c,s){dispose();card=c;story=c?s:null;savedCount=0;if(!c)return;el('narration-rate').value=String(rate);sync();refreshSaved()}
+document.addEventListener('click',e=>{const id=e.target.closest('button')?.id;if(id==='listen-card')listen();else if(id==='pause-card')pause();else if(id==='stop-card')stop();else if(id==='save-narration')saveStoryAudio()});
+document.addEventListener('change',e=>{if(e.target.id==='narration-rate'){rate=Number(e.target.value);if(audio)audio.playbackRate=rate;persist()}});
+document.addEventListener('input',e=>{if(e.target.id==='narration-position'&&audio&&Number.isFinite(audio.duration)){audio.currentTime=Number(e.target.value)/1000*audio.duration;progress()}});
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&mode==='playing')pause()});
+window.addEventListener('pagehide',dispose);
 window.CardNarration={markup,mount,stop};
 })();
