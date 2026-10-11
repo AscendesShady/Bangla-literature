@@ -1,5 +1,13 @@
 # Research and lecture coverage
 
+## English listening and author portraits · 11 October 2026
+
+All 528 cards now offer user-started English device narration of their heading and complete English explanation. Gentle pacing is the default; readers can choose a voice and pace. There is no automatic playback or new audio upload. Voice quality and offline support depend on the device's available English voices. Speech controls follow the browser Web Speech API, documented at https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis.
+
+Each of the 44 works has an Author tab before Quiz. Eighteen portraits were obtained from Wikimedia Commons with image source, creator, reuse license and resizing credits retained beneath the image. Sources and license metadata were retrieved from Commons image records on 11 October 2026; the editable local record is `content/author-portraits.json`. The nine other author guides (six early/oral author identities and Farrukh Ahmad, Anwar Pasha, Abu Ishaque) use a clearly labelled original manuscript symbol because a verified reusable portrait was not found in this pass. The symbol is not a historical likeness. No author faces were generated.
+
+Portraits and the narration script are included in the offline cache. Stories, scene order, endings, bilingual text and quiz answers are unchanged by this feature update. The local Word companion's learning text is unchanged; runtime uploads still exclude Python, Word documents and lecture PDFs.
+
 Prepared 10 October 2026. This log accompanies the bilingual catalogue and Word companion.
 
 ## Scope
