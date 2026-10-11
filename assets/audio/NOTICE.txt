@@ -1,6 +1,6 @@
 Bangla Literature — recorded English narration
 
-These recordings read the app's original English learning summaries and headings.
+These recordings read the app's original English learning summaries only; card headings are not spoken.
 They are neural speech generated locally, not recordings of a human narrator.
 
 Model: Kokoro 82M v1.0 by hexgrad
