@@ -6,6 +6,8 @@ let rate=1;try{const saved=JSON.parse(localStorage.getItem(KEY));if([.9,1,1.1].i
 let audio=null,card=null,story=null,navigate=null,mode='idle',generation=0,savedCount=0,statusMessage='';
 let turnTimer=null,pendingTurn=false,transition=false,prepared=false,removeListeners=null,seekTo=null;
 const downloads=new Set(),el=id=>document.getElementById(id),supportsCache='caches' in window&&window.isSecureContext;
+const libraryAssets=window.LITERATURE.stories.flatMap(s=>s.cards.map(c=>new URL('./'+c.narration.asset,location.href).href)),libraryURLs=new Set(libraryAssets);
+let librarySaving=false,librarySaved=new Set(),libraryMessage='',libraryController=null,libraryCancelled=false;
 const time=n=>`${Math.floor((n||0)/60)}:${String(Math.floor((n||0)%60)).padStart(2,'0')}`;
 const index=()=>story?.cards.indexOf(card)??0;
 const total=()=>story?.cards.reduce((n,c)=>n+(c.narration?.duration||0),0)||0;
@@ -28,15 +30,15 @@ function sync(){
  el('listen-current').setAttribute('aria-label',active()?'Stop story narration':'Play narration from the current card');
  el('story-player-progress').hidden=!active()&&mode!=='finished';
  el('narration-status').textContent=statusMessage||(['playing','loading','between'].includes(mode)?`Card ${index()+1} / 12${mode==='loading'?' · Loading…':''}`:mode==='paused'?`Paused · Card ${index()+1} / 12`:'All 12 cards · English');
- const downloading=downloads.has(story?.id),allSaved=savedCount===12;
+ const downloading=downloads.has(story?.id)||librarySaving,allSaved=savedCount===12;
  el('save-narration').disabled=!card?.narration||!supportsCache||downloading||allSaved;
- el('save-narration').textContent=downloading?'Saving…':allSaved?'✓ Audio saved':'↓ Save audio offline';
+ el('save-narration').textContent=librarySaving?'Library download running…':downloading?'Saving…':allSaved?'✓ Audio saved':'↓ Save audio offline';
  el('audio-offline-status').textContent=supportsCache?`${savedCount}/12 recordings saved`:'Offline saving needs HTTPS or localhost.';
  progress();
 }
 async function refreshSaved(){
  const target=story;if(!target||!supportsCache){savedCount=0;sync();return}
- try{const cache=await caches.open(AUDIO_CACHE),results=await Promise.all(target.cards.map(c=>c.narration?cache.match(new URL('./'+c.narration.asset,location.href).href):null));if(story===target){savedCount=results.filter(Boolean).length;sync()}}catch{if(story===target){savedCount=0;sync()}}
+ try{const cache=await caches.open(AUDIO_CACHE),results=await Promise.all(target.cards.map(c=>c.narration?cache.match(new URL('./'+c.narration.asset,location.href).href):null));if(story===target){savedCount=results.filter(Boolean).length;results.forEach((saved,i)=>{if(saved)librarySaved.add(new URL('./'+target.cards[i].narration.asset,location.href).href)});sync();syncLibrary()}}catch{if(story===target){savedCount=0;sync()}}
 }
 function cancelTurn(){clearTimeout(turnTimer);turnTimer=null;pendingTurn=false}
 function resetAudio(reuse=false){
@@ -92,7 +94,7 @@ function seek(value){
  mode='paused';statusMessage='';sync();if(wasPlaying)listen();
 }
 async function saveStoryAudio(){
- if(!supportsCache||!story||downloads.has(story.id))return;
+ if(!supportsCache||!story||downloads.has(story.id)||librarySaving)return;
  const target=story;downloads.add(target.id);sync();let count=0;
  try{
   const cache=await caches.open(AUDIO_CACHE);
@@ -102,7 +104,44 @@ async function saveStoryAudio(){
    count++;if(story===target){savedCount=count;sync()}
   }));
  }catch{if(story===target){statusMessage='Some audio could not be saved. Reconnect and retry.';sync()}}
- finally{downloads.delete(target.id);if(story===target){sync();await refreshSaved()}}
+ finally{downloads.delete(target.id);if(story===target){sync();await refreshSaved()}if(!librarySaving)await refreshLibrarySaved()}
+}
+function syncLibrary(){
+ const button=el('download-all-narration');if(!button)return;
+ const count=librarySaved.size,all=count===libraryAssets.length,mb=(window.LITERATURE.narrationLibrary?.bytes/1000000).toFixed(1);
+ el('narration-library-size').textContent=`All ${window.LITERATURE.stories.length} stories · ${libraryAssets.length} recordings${Number.isFinite(Number(mb))?' · '+mb+' MB':''}`;
+ button.disabled=!supportsCache||(!librarySaving&&all);
+ button.textContent=librarySaving?'Cancel download':all?'✓ All narration saved':count?'↓ Resume narration download':'↓ Download all narration';
+ el('narration-library-progress').hidden=count===0&&!librarySaving&&!libraryMessage;
+ el('narration-download-meter').max=libraryAssets.length;el('narration-download-meter').value=count;
+ el('narration-download-status').textContent=all?'All stories are ready for offline listening.':libraryMessage?`${count}/${libraryAssets.length} saved · ${libraryMessage}`:librarySaving?`Saving ${count}/${libraryAssets.length} recordings…`:count?`${count}/${libraryAssets.length} recordings saved. Continue whenever you like.`:'';
+}
+async function refreshLibrarySaved(){
+ if(!supportsCache){libraryMessage='Offline saving needs HTTPS or localhost.';syncLibrary();return}
+ try{const cache=await caches.open(AUDIO_CACHE);librarySaved=new Set((await cache.keys()).map(r=>r.url).filter(url=>libraryURLs.has(url)));syncLibrary()}catch{libraryMessage='Could not check saved audio. Try again.';syncLibrary()}
+}
+async function saveLibraryAudio(){
+ if(librarySaving){libraryCancelled=true;libraryController?.abort();return}
+ if(!supportsCache)return;
+ librarySaving=true;libraryCancelled=false;libraryMessage='';libraryController=new AbortController();const controller=libraryController;let failed=false;
+ syncLibrary();sync();
+ try{
+  await refreshLibrarySaved();const cache=await caches.open(AUDIO_CACHE);let cursor=0;
+  await Promise.all(Array.from({length:3},async()=>{
+   while(cursor<libraryAssets.length&&!controller.signal.aborted){
+    const url=libraryAssets[cursor++];if(librarySaved.has(url))continue;
+    try{
+     if(!await cache.match(url)){const response=await fetch(url,{signal:controller.signal});if(!response.ok||response.status!==200)throw Error('Download failed');await cache.put(url,response)}
+     librarySaved.add(url);syncLibrary();
+    }catch{if(!controller.signal.aborted){failed=true;controller.abort()}return}
+   }
+  }));
+ }catch{failed=true}
+ finally{
+  librarySaving=false;libraryController=null;await refreshLibrarySaved();
+  libraryMessage=librarySaved.size===libraryAssets.length?'':libraryCancelled?'Download cancelled. Resume anytime.':failed?'Download paused. Reconnect and resume.':'';
+  syncLibrary();sync();await refreshSaved();
+ }
 }
 function markup(){return `<div class="story-player-main"><div class="story-player-caption"><strong>English narration</strong><span id="narration-status" role="status" aria-live="polite">All 12 cards · English</span></div><div class="story-player-actions"><button id="listen-story" type="button" class="primary">▶ Play story</button><button id="listen-current" type="button" aria-label="Play narration from the current card">Play from here</button><details id="narration-options"><summary aria-label="Narration options">⋯</summary><div class="story-player-options"><label for="narration-rate">Playback pace</label><select id="narration-rate"><option value="0.9">Slower</option><option value="1">Gentle original</option><option value="1.1">A little faster</option></select><p>Cards turn as the story plays. Pause anytime.</p><button id="save-narration" type="button">↓ Save audio offline</button><span id="audio-offline-status"></span></div></details></div></div><div id="story-player-progress" hidden><label class="sr-only" for="narration-position">Seek within the whole story narration</label><input id="narration-position" type="range" min="0" max="1000" step="1" value="0"><span id="narration-time">0:00</span></div>`}
 function mount(c,s,jump){
@@ -117,6 +156,7 @@ document.addEventListener('click',e=>{const id=e.target.closest('button')?.id;
  if(id==='listen-story'){if(['playing','loading','between'].includes(mode))pause();else if(mode==='paused')listen();else startAt(0)}
  else if(id==='listen-current'){if(active())stop();else startAt(index())}
  else if(id==='save-narration')saveStoryAudio();
+ else if(id==='download-all-narration')saveLibraryAudio();
 });
 document.addEventListener('change',e=>{if(e.target.id==='narration-rate'){rate=Number(e.target.value);if(audio)audio.playbackRate=rate;persist()}});
 document.addEventListener('input',e=>{if(e.target.id==='narration-position')seek(e.target.value)});
@@ -124,5 +164,9 @@ document.addEventListener('visibilitychange',()=>{if(document.hidden)pause()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&el('narration-options')?.open){el('narration-options').open=false;e.preventDefault();e.stopImmediatePropagation()}},true);
 document.addEventListener('click',e=>{const options=el('narration-options');if(options?.open&&!options.contains(e.target))options.open=false});
 window.addEventListener('pagehide',stop);
+window.addEventListener('pageshow',()=>{if(!librarySaving)refreshLibrarySaved()});
+window.addEventListener('appinstalled',()=>{if(!librarySaving)refreshLibrarySaved()});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&!librarySaving)refreshLibrarySaved()});
+refreshLibrarySaved();
 window.CardNarration={mount,stop};
 })();
