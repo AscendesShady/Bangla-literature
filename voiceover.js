@@ -178,7 +178,7 @@ async function clearStorage(){
    const channel=new MessageChannel(),timeout=setTimeout(()=>{channel.port1.close();reject(Error('Close other app tabs and retry.'))},10000);
    channel.port1.onmessage=e=>{clearTimeout(timeout);channel.port1.close();e.data?.ok?resolve():reject(Error('Could not clear offline files. Try again.'))};
    worker.postMessage({type:'CLEAR_OFFLINE_STORAGE',kind},[channel.port2]);
-  });if(kind==='all')await registration.unregister()}
+  });if(kind==='all')registration.unregister().catch(()=>{})}
   const names=await caches.keys();await Promise.all(names.filter(name=>kind==='audio'?name===AUDIO_CACHE:name.startsWith('bangla-literature-')).map(name=>caches.delete(name)));
   librarySaved.clear();savedCount=0;libraryMessage='';storageMessage=kind==='audio'?'Downloaded narration cleared. You can download it again anytime.':'App cache cleared. Saved stories and reading progress kept. Offline access is now off.';
  }catch(error){storageMessage=`${error.message||'Could not clear all files.'} Your reading progress is kept.`}
@@ -186,7 +186,11 @@ async function clearStorage(){
 }
 async function restoreOffline(){
  if(storageBusy||!navigator.onLine)return;storageBusy=true;storageMessage='Preparing offline library…';syncStorage();
- try{const state=readStorageState();setStorageState({...state,disabled:false,clearing:false});await window.enableLiteratureOffline();storageMessage='Offline reading is ready. Download narration whenever you like.'}
+ try{
+  const scope=new URL('./',location.href).href;
+  await new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(Error('Reconnect and try again.')),15000);navigator.serviceWorker.getRegistrations().then(list=>Promise.all(list.filter(r=>r.scope===scope).map(r=>r.unregister()))).then(()=>{clearTimeout(timer);resolve()},error=>{clearTimeout(timer);reject(error)})});
+  const state=readStorageState();setStorageState({...state,disabled:false,clearing:false});await window.enableLiteratureOffline();storageMessage='Offline reading is ready. Download narration whenever you like.';
+ }
  catch{setStorageState({...readStorageState(),disabled:true});storageMessage='Could not restore offline access. Reconnect and try again.'}
  finally{storageBusy=false;sync();syncLibrary()}
 }
