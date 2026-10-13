@@ -5,8 +5,52 @@
   <meta name="theme-color" content="#164b43"><meta name="description" content="Learn Bengali literature through timelines, bilingual story cards, author guides and quizzes. Works offline.">
   <title>পাতার পর পাতা · Bangla Literature</title>
   <link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./assets/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="./assets/icon-192.png">
-  <link rel="stylesheet" href="./styles.css">
-  <script defer src="./content.js"></script><script defer src="./voiceover.js"></script><script defer src="./app.js"></script>
+  <meta name="app-release" content="bangla-literature-6356e0288755">
+  <script id="app-bootstrap">'use strict';
+// Load a consistent release, retry interrupted downloads, and show recoverable errors.
+(() => {
+const release=document.querySelector('meta[name="app-release"]')?.content||'',files=['content.js','voiceover.js','app.js'];
+let running=false,attemptedApp=false;
+const node=id=>document.getElementById(id);
+function show(message,busy=false){node('startup-status').hidden=false;node('startup-message').textContent=message;node('retry-startup').hidden=busy;node('retry-startup').disabled=busy}
+async function updateWorker(){
+ if(!('serviceWorker'in navigator)||location.protocol==='file:')return;
+ try{const state=JSON.parse(localStorage.getItem('bangla-literature-offline-storage-v1'));if(state?.disabled||state?.clearing)return}catch{}
+ try{await navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'})}catch{}
+}
+async function execute(file,attempt){
+ const source=new URL('./'+file,location.href);source.searchParams.set('v',release);if(attempt){source.searchParams.set('offline','off');const slash=source.pathname.lastIndexOf('/')+1;source.pathname=source.pathname.slice(0,slash)+'%'+source.pathname.charCodeAt(slash).toString(16)+source.pathname.slice(slash+1)}
+ let objectURL;
+ if(location.protocol!=='file:'){
+  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),12000);
+  try{const response=await fetch(source,{signal:controller.signal,cache:attempt?'reload':'default'});if(!response.ok)throw Error('Script download failed');const text=await response.text();if(file!=='content.js'&&text.split(/\r?\n/,1)[0]!=='// Literature release: '+release)throw Error('Release mismatch');objectURL=URL.createObjectURL(new Blob([text],{type:'application/javascript'}))}finally{clearTimeout(timer)}
+ }
+ try{await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=objectURL||source.href;script.onload=()=>{script.remove();resolve()};script.onerror=()=>{script.remove();reject(Error('Script unavailable'))};document.head.append(script)})}finally{if(objectURL)URL.revokeObjectURL(objectURL)}
+}
+async function start(){
+ if(running)return;if(attemptedApp){location.reload();return}running=true;show('Opening your learning library…',true);updateWorker();
+ try{
+  for(const file of files){
+   if(file==='content.js'&&window.LITERATURE?.cacheVersion===release)continue;
+   if(file==='voiceover.js'&&window.CardNarration)continue;
+   let loaded=false;
+   for(let attempt=0;attempt<3&&!loaded;attempt++){
+    try{if(attempt){show('Reconnecting to the library…',true);await new Promise(resolve=>setTimeout(resolve,attempt*1000))}if(file==='app.js')attemptedApp=true;await execute(file,attempt);
+     if(file==='content.js'&&(!Array.isArray(window.LITERATURE?.stories)||window.LITERATURE.cacheVersion!==release))throw Error('Release mismatch');
+     if(file==='voiceover.js'&&!window.CardNarration)throw Error('Player unavailable');
+     if(file==='app.js'&&!window.LiteratureAppReady)throw Error('Library unavailable');loaded=true;
+    }catch(error){if(attempt===2||file==='app.js'&&window.LiteratureAppStarted)throw error}
+   }
+  }
+  node('startup-status').hidden=true;
+ }catch{show(navigator.onLine?'The library could not finish loading. Please try again.':'You are offline and this library is not saved yet. Reconnect, then try again.');}
+ finally{running=false}
+}
+function init(){node('retry-startup').addEventListener('click',start);window.addEventListener('online',()=>{if(!window.LiteratureAppReady&&!attemptedApp)start()});start()}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
+})();
+</script>
+  <link rel="stylesheet" href="./styles.css?v=bangla-literature-6356e0288755">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -15,6 +59,7 @@
   <div class="top-actions"><label class="sr-only" for="language">Explanation language</label><select id="language"><option value="both">বাংলা + English</option><option value="bn">বাংলা</option><option value="en">English</option></select><button id="install" class="primary">↓ <span>Install app</span></button></div>
 </header>
 <main id="main">
+  <section id="startup-status" class="startup-status" role="status" aria-live="polite"><p id="startup-message">Opening your learning library…</p><button id="retry-startup" class="primary" hidden>Try again</button><small>Your saved stories and reading progress are kept.</small></section>
   <section class="hero" id="home">
     <div><p class="eyebrow">30 LECTURES · A LITERARY JOURNEY</p><h1>Enter a story.<br><em>Remember a world.</em></h1><p class="hero-bn" lang="bn">গল্পের ভেতর দিয়ে বাংলা সাহিত্য শিখি।</p><p class="intro">From the songs of the siddhacharyas to the voices of Bangladesh. Follow the timeline, meet the writers, and unfold each work in twelve small steps.</p><div class="hero-actions"><a class="primary button" href="#timeline">Explore the timeline <span aria-hidden="true">↘</span></a><button class="plain" id="continue">Continue reading →</button></div><div class="stats" id="stats"></div></div>
     <div class="hero-art" aria-hidden="true"><svg viewBox="0 0 520 370" xmlns="http://www.w3.org/2000/svg"><circle cx="270" cy="177" r="145" fill="#e8e6d3"/><circle cx="405" cy="65" r="25" fill="#d9a34f"/><path d="M24 275Q110 245 200 280T450 274M50 303Q150 274 250 302T498 298" fill="none" stroke="#719b8f" stroke-width="3"/><path d="M91 146Q167 121 256 160Q347 121 425 146L407 275Q342 252 256 288Q178 252 104 275Z" fill="#fbf8ed" stroke="#164b43" stroke-width="4"/><path d="M256 160V288M105 139L103 129Q179 119 256 151Q331 119 414 129L417 139" fill="none" stroke="#164b43" stroke-width="3"/><path d="M134 175Q185 165 225 183M135 195Q182 185 225 203M138 215Q183 207 225 223M139 235Q185 227 224 241M284 183Q337 165 391 175M284 203Q337 185 389 194M283 223Q337 207 387 214M285 243Q335 226 384 235" fill="none" stroke="#a6aa8f" stroke-width="3"/><path d="M316 297L393 227L422 280Z" fill="#b64b39"/><path d="M92 94q28-38 40 0q22-30 37 0M337 38q18-24 28 0q18-24 29 0" fill="none" stroke="#164b43" stroke-width="3"/><path d="M83 265Q52 203 69 166Q103 189 83 265M80 246Q24 224 29 200Q71 207 80 246" fill="#719b8f"/><path d="M448 265Q478 203 462 175Q426 208 448 265M452 242Q492 213 493 193Q462 202 452 242" fill="#719b8f"/></svg><span class="art-note">Every page opens another door.<br><span lang="bn">প্রতি পাতায় নতুন পৃথিবী।</span></span></div>

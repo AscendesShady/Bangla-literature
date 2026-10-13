@@ -1,3 +1,4 @@
+// Literature release: bangla-literature-6356e0288755
 'use strict';
 // One persistent story player. Finished recordings contain only the story text.
 (() => {
