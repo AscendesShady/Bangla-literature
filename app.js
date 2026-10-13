@@ -1,7 +1,5 @@
-// Literature release: bangla-literature-6356e0288755
 'use strict';
 (() => {
-window.LiteratureAppStarted=true;
 const D=window.LITERATURE,$=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const KEY='bangla-literature-v1';
@@ -110,5 +108,4 @@ async function registerOffline(required=false){const status=$('#offline-status')
 window.enableLiteratureOffline=()=>registerOffline(true);
 window.addEventListener('offline-storage-change',()=>{if(window.OfflineStorage?.disabled())$('#offline-status').textContent='Offline access off · app cache cleared'});
 init();
-window.LiteratureAppReady=true;
 })();
