@@ -25,6 +25,8 @@ No server, API key, npm build, database or paid service is required. The reposit
 
 ## Reading controls
 
+The interface takes design inspiration from [Liquid Glass Widgets](https://github.com/sdegenaar/liquid_glass_widgets): frosted navigation, pill-shaped tabs, rim highlights and restrained interaction motion. The original CSS adaptation keeps story cards and reading text on solid surfaces. It runs directly in HTML/CSS/JavaScript; the Flutter package and its shaders are not bundled. Solid-surface fallbacks, reduced motion and increased contrast preferences are supported.
+
 - Search Bengali or English titles, authors, characters and themes. Filters combine with the selected period.
 - Click anywhere on a story card to open it. Save using the heart; choose **Saved stories** to see your shelf.
 - The reader supports Previous/Next, arrow keys, numbered card jumps and Escape to close. On touchscreens, swipe left for the next scene and right for the previous one; vertical scrolling and pinch zoom remain available. Continue appears only for stories started but not completed; every story opens by clicking its card or keyboard-accessible title.
