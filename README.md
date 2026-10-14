@@ -14,18 +14,18 @@ Open `http://localhost:8765/` in Chrome. Wait for **Offline ready** before disco
 
 ## Publish on GitHub Pages
 
-1. Upload the **contents of `02-GitHub-Pages`** to the repository, with `index.html` at the repository root. Do not nest that folder inside the repository.
-   The local delivery has exactly two folders and one APK: `01-Reproduce` holds private editable sources, lectures, Word, QA and build tools; `02-GitHub-Pages` holds this complete static website; `Bangla-Literature.apk` installs the offline Android reader. Only the website folder belongs in this public repository. Git's hidden `.git` directory is local repository metadata and is never uploaded as website content. Each public file is below GitHub's 25 MiB browser upload limit.
+1. Upload the **contents of `pages`** to the repository, with `index.html` at the repository root. Do not nest that folder inside the repository.
+   The local delivery has exactly two folders and one APK: `resource` holds private editable sources, lectures, Word, QA and build tools; `pages` holds this complete static website; `Bangla-Literature.apk` installs the offline Android reader. Only the website folder belongs in this public repository. Git's hidden `.git` directory is local repository metadata and is never uploaded as website content. Each public file is below GitHub's 25 MiB browser upload limit.
 2. Commit the files before pushing. The original lecture PDFs and OCR files are deliberately excluded from this publishing package.
 3. In GitHub, open **Settings → Pages**. Select **Deploy from a branch**, choose your branch (usually `main`) and **/(root)**, then save.
 4. Open the HTTPS Pages address after deployment. A project address such as `https://YOUR-NAME.github.io/YOUR-REPOSITORY/` is supported; all app paths are relative.
 5. Check the timeline, a story and the **Offline ready** indicator. Reopen with the network disabled. Use the top **Install app** button in Chrome. If Chrome does not supply a prompt, the button explains the browser menu route.
 
-No server, API key, npm build, database or paid service is required. The repository contains the generated static web app. Development sources and the Word companion remain in the private `01-Reproduce` folder.
+No server, API key, npm build, database or paid service is required. The repository contains the generated static web app. Development sources and the Word companion remain in the private `resource` folder.
 
 ## Android APK
 
-The local `Bangla-Literature.apk` is one signed universal installer for phones and tablets running Android 9 or newer with an up-to-date Android System WebView. It includes all 44 stories, pictures, author portraits and 528 English recordings, so no initial narration download is needed. Copy it to the device, open it and allow installation from the app used to open the file when Android requests it. The APK is a local deliverable, not part of the GitHub Pages repository.
+The local `Bangla-Literature.apk` (version 1.0.1) is one signed universal installer for phones and tablets running Android 9 or newer with an up-to-date Android System WebView. It includes all 44 stories, pictures, author portraits and 528 English recordings, so no initial narration download is needed. Narration uses Heart, an American female neural voice, at a relaxed 0.92 generation speed with sentence pauses; card headings are not spoken. Copy it to the device, open it and allow installation from the app used to open the file when Android requests it. Install this version over the earlier APK to retain its progress; the signing key and app identity are unchanged. The APK is a local deliverable, not part of the GitHub Pages repository.
 
 In the Android reader, **Clear temporary cache** preserves the bundled library and reading progress. Uninstall the Android app to remove its packaged library and recordings. Export progress first: Android installation and the browser website have separate storage, and this app does not synchronize devices automatically. Import the JSON backup into the other app/browser to merge progress. Source links open externally in the browser. Content updates require installing a newer APK signed with the same private project key.
 
@@ -54,7 +54,7 @@ See `content/research-log.md` for verification scope, corrections and lecture co
 
 ## Regenerate after editing
 
-These commands apply inside the private `01-Reproduce` folder. Its `REPRODUCE.md` and `Rebuild.ps1` describe the retained Windows runtimes, website generator and APK build. Build scripts, model weights and the APK signing key are excluded from this public repository. GitHub Pages runs the generated HTML, CSS and JavaScript directly; it does not need Python. Keep the manifest, service worker, icons, font and source-note files alongside the app because its install and offline features reference them.
+These commands apply inside the private `resource` folder. Its `REPRODUCE.md` and `Rebuild.ps1` describe the retained Windows runtimes, website generator and APK build. Build scripts, model weights and the APK signing key are excluded from this public repository. GitHub Pages runs the generated HTML, CSS and JavaScript directly; it does not need Python. Keep the manifest, service worker, icons, font and source-note files alongside the app because its install and offline features reference them.
 
 ```powershell
 python -m pip install -r requirements.txt
