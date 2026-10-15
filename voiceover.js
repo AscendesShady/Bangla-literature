@@ -1,5 +1,5 @@
 'use strict';
-// One persistent story player. Finished recordings contain only the story text.
+// One persistent player for the approved Heart recordings. No device speech or alternate voice fallback.
 (() => {
 const AUDIO_CACHE='bangla-literature-audio-v1',KEY='bangla-literature-recorded-audio-v1';
 const STORAGE_KEY='bangla-literature-offline-storage-v1';
@@ -37,7 +37,7 @@ function sync(){
  el('listen-current').textContent=active()?'■ Stop':'Play from here';
  el('listen-current').setAttribute('aria-label',active()?'Stop story narration':'Play narration from the current card');
  el('story-player-progress').hidden=!active()&&mode!=='finished';
- el('narration-status').textContent=statusMessage||(['playing','loading','between'].includes(mode)?`Card ${index()+1} / 12${mode==='loading'?' · Loading…':''}`:mode==='paused'?`Paused · Card ${index()+1} / 12`:'All 12 cards · English');
+ el('narration-status').textContent=statusMessage||(['playing','loading','between'].includes(mode)?`Card ${index()+1} / 12${mode==='loading'?' · Loading…':''}`:mode==='paused'?`Paused · Card ${index()+1} / 12`:'12 cards · American English');
  const downloading=downloads.has(story?.id)||librarySaving,allSaved=savedCount===12;
  el('save-narration').disabled=!card?.narration||!supportsCache||downloading||allSaved||storageBlocked();
  el('save-narration').textContent=librarySaving?'Library download running…':downloading?'Saving…':allSaved?'✓ Audio saved':'↓ Save audio offline';
@@ -197,7 +197,7 @@ async function restoreOffline(){
 window.OfflineStorage={disabled:()=>readStorageState().disabled||readStorageState().clearing};
 window.addEventListener('storage',e=>{if(e.key!==STORAGE_KEY)return;const previous=storageState;storageState=readStorageState();if(storageState.epoch!==previous.epoch||storageState.disabled||storageState.clearing){abortDownloads();librarySaved.clear();savedCount=0;libraryMessage='';storageMessage=storageState.disabled?'App cache cleared in another window. Offline access is off.':'Downloaded narration cleared in another window.'}sync();syncLibrary();window.dispatchEvent(new Event('offline-storage-change'))});
 window.addEventListener('online',syncStorage);window.addEventListener('offline',syncStorage);
-function markup(){return `<div class="story-player-main"><div class="story-player-caption"><strong>English narration</strong><span id="narration-status" role="status" aria-live="polite">All 12 cards · English</span></div><div class="story-player-actions"><button id="listen-story" type="button" class="primary">▶ Play story</button><button id="listen-current" type="button" aria-label="Play narration from the current card">Play from here</button><details id="narration-options"><summary aria-label="Narration options">⋯</summary><div class="story-player-options"><label for="narration-rate">Playback pace</label><select id="narration-rate"><option value="0.9">Slower</option><option value="1">Gentle original</option><option value="1.1">A little faster</option></select><p>Cards turn as the story plays. Pause anytime.</p><button id="save-narration" type="button">↓ Save audio offline</button><span id="audio-offline-status"></span></div></details></div></div><div id="story-player-progress" hidden><label class="sr-only" for="narration-position">Seek within the whole story narration</label><input id="narration-position" type="range" min="0" max="1000" step="1" value="0"><span id="narration-time">0:00</span></div>`}
+function markup(){return `<div class="story-player-main"><div class="story-player-caption"><strong>English narration</strong><span id="narration-status" role="status" aria-live="polite">12 cards · American English</span></div><div class="story-player-actions"><button id="listen-story" type="button" class="primary">▶ Play story</button><button id="listen-current" type="button" aria-label="Play narration from the current card">Play from here</button><details id="narration-options"><summary aria-label="Narration options">⋯</summary><div class="story-player-options"><label for="narration-rate">Playback pace</label><select id="narration-rate"><option value="0.9">Slower</option><option value="1">Gentle original</option><option value="1.1">A little faster</option></select><p>A gentle American female voice reads the story text. Cards turn as it plays. Pause anytime.</p><button id="save-narration" type="button">↓ Save audio offline</button><span id="audio-offline-status"></span></div></details></div></div><div id="story-player-progress" hidden><label class="sr-only" for="narration-position">Seek within the whole story narration</label><input id="narration-position" type="range" min="0" max="1000" step="1" value="0"><span id="narration-time">0:00</span></div>`}
 function mount(c,s,jump){
  const host=el('story-player');if(!host)return;
  if(!host.firstElementChild)host.innerHTML=markup();

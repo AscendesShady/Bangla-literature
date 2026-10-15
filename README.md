@@ -31,6 +31,8 @@ In the Android reader, **Clear temporary cache** preserves the bundled library a
 
 ## Reading controls
 
+The website uses only the same **Heart American female recordings** bundled in the Android APK, generated at a gentle 0.92 pace. All 528 files contain the English story body without card headings. There is no device speech synthesis or alternate voice fallback. Playback pace changes the speed of these recordings without selecting another voice. Already-downloaded matching recordings are retained when the website updates.
+
 - Search Bengali or English titles, authors, characters and themes. Filters combine with the selected period.
 - Click anywhere on a story card to open it. Save using the heart; choose **Saved stories** to see your shelf.
 - The reader supports Previous/Next, arrow keys, numbered card jumps and Escape to close. On touchscreens, swipe left for the next scene and right for the previous one; vertical scrolling and pinch zoom remain available. Continue appears only for stories started but not completed; every story opens by clicking its card or keyboard-accessible title.

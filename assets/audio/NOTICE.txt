@@ -4,8 +4,9 @@ These recordings read the app's original English learning summaries only; card h
 They are neural speech generated locally, not recordings of a human narrator.
 
 Model: Kokoro 82M v1.0 by hexgrad
-Voice: af_heart (Heart), American English
+Voice: af_heart (Heart), American English, female
 Generation speed: 0.92; 24 kHz mono; MP3 64 kbps
+Playback: these recordings only, shared with the Android APK; no device voice fallback.
 Model source: https://huggingface.co/hexgrad/Kokoro-82M
 Model license: Apache License 2.0 (attached as LICENSE-kokoro.txt)
 Inference: https://github.com/thewh1teagle/kokoro-onnx (MIT)
