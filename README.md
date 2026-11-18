@@ -1,6 +1,6 @@
 # পাতার পর পাতা · Bangla Literature
 
-A static bilingual learning library for the 30 supplied literature lectures: 44 complete twelve-card sequences (38 narrative works and six poem journeys), 77 author guides, an eight-part timeline and 132 recall questions. Bengali, English and side-by-side reading are available. Endings are included.
+A bilingual learning library with 97 illustrated twelve-card readings, 90 author and tradition guides, and 291 recall questions. The catalogue covers the 30 supplied literature lectures and includes supplementary readings. Bengali, English and side-by-side reading are available.
 
 ## Preview
 
@@ -25,7 +25,7 @@ No server, API key, npm build, database or paid service is required. The reposit
 
 ## Android APK
 
-The local `Bangla-Literature.apk` (version 1.0.4) is a signed universal installer for phones and tablets running Android 9 or newer. All 44 stories and illustrations are included for offline reading. Install over the previous APK to keep progress. The website package does not contain the APK.
+The local `Bangla-Literature.apk` (version 1.0.6) is a signed universal installer for phones and tablets running Android 9 or newer. All 97 readings and illustrations are included for offline reading. Install over the previous APK to keep progress. The website package does not contain the APK.
 
 The Android app checks for a newer release when it opens online. You can also tap **Check for update** near **Export progress**. The app opens GitHub for a newer signed installer when available. Android and browser progress are stored separately; export and import a JSON backup to move it.
 

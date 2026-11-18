@@ -606,5 +606,694 @@
     "bible": "No invented named protagonist. Bengali people with varied brown complexions across childhood, farming, women household scenes, youth and freedom imagery. Historically plausible Bangladesh setting. Faces are artistic interpretations. Portrait references to Rabindranath and Nazrul, when the card names them, should follow familiar elderly Tagore with long white beard and youthful Nazrul with wavy dark hair respectfully; no film actors. Follow each poetic comparison, not a literal war plot.",
     "prompt": "Use case: illustration-story. Create ONE complete twelve-panel storybook illustration atlas for the literature learning app. Beautiful expressive hand-painted watercolor and gouache with ink outlines, believable anatomy, textured paper, culturally plausible settings and clothing. STRICT composition: EXACTLY FOUR COLUMNS by THREE ROWS of TWELVE EQUAL rectangular panels. Entire canvas LANDSCAPE 1536x1024. Grid is edge-to-edge with no gaps, no outer margin, no frames, no lettering, labels, title, panel numbers or watermark. Every cell must be an independent scene; no character overlaps panel boundaries. Maintain the same recognisable faces, skin tones, body builds, hair and costumes across scenes, with only story-supported ageing, haircuts and costume changes. Do not whiten characters, turn dark skin into a marker of evil, use ethnic caricatures or film actor likenesses. Children are visibly children and modestly clothed. Death, violence and coercion communicated by atmosphere, absence and expressions, no gore or sexualised imagery. Follow the supplied story rather than any film adaptation. Do not add a happy ending to an unresolved or tragic work. Faces placed away from cell edges for use as separately displayed cards.\nWork: Swadhinata Tumi / স্বাধীনতা তুমি\nSetting: A Liberation War lyric that defines freedom through a sequence of cultural and everyday images.\nCharacter continuity bible: No invented named protagonist. Bengali people with varied brown complexions across childhood, farming, women household scenes, youth and freedom imagery. Historically plausible Bangladesh setting. Faces are artistic interpretations. Portrait references to Rabindranath and Nazrul, when the card names them, should follow familiar elderly Tagore with long white beard and youthful Nazrul with wavy dark hair respectfully; no film actors. Follow each poetic comparison, not a literal war plot.\nReading note: Twelve reading stages follow imagery and ideas, not twelve invented events. These explanations are paraphrases, not quotations or a line-by-line translation.\nTWELVE CELLS in row-major order, left to right and top to bottom:\n1. Address freedom: The speaker speaks to freedom as if it were a person. Repeated direct address makes an abstract ideal intimate.\n2. The cultural inheritance: Tagore’s poetic world becomes one image of freedom. Cultural creation is part of what must remain alive.\n3. The rebel’s voice: Nazrul’s fearless presence adds defiance. Freedom contains creative tenderness and resistance together.\n4. The language memorial: The Shaheed Minar links freedom to language and public memory. The political ideal has a local history.\n5. The raised flag: A flag in the wind gives freedom a public sign. Movement and visibility matter in the image.\n6. The fields: Rural land and its green growth make freedom tangible. The country is more than an official map.\n7. The farmer: A working farmer enters the definition. Everyday labour belongs inside national dignity.\n8. The village girl: A girl’s laughter gives the idea an ordinary human sound. Freedom includes room for unafraid joy.\n9. Other working lives: Workers and people by the river widen the portrait. Political independence matters to lived experience.\n10. Home and affection: Domestic and intimate images soften the public symbols. A country’s freedom is also felt close to home.\n11. Images accumulate: No single image exhausts the meaning. Repetition gathers many lives into a common address.\n12. Keep the plurality: The poem leaves freedom embodied in culture and ordinary life. Remember the sequence as a constellation, not a plot with invented events.",
     "generation": "built-in image_gen"
+  },
+  "padmapurana": {
+    "asset": "assets/illustrations/padmapurana.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Vijay Gupta’s Manasa narrative. Keep Chand Saudagar, Behula, Manasa and Lakhindar visually consistent.",
+    "prompt": "Use case: illustration-story. One edge-to-edge 1536×1024 atlas for a Bengali literature reader. Exactly FOUR COLUMNS and THREE ROWS of equal rectangular independent scenes, panel boundaries at precisely 25/50/75% width and 33⅓/66⅔% height. No gutters, frames, borders, lettering or digits. Traditional hand-painted watercolor and gouache with expressive ink lines, subtly textured paper, Bengali sacred geography, same faces and garments throughout. Line-up in strict row-major order. Medieval Bengal, the Manasa legend in Vijaya Gupta’s Padmapurana. Recurring cast: Chand is a middle-aged merchant in ivory with black-and-gray beard; Behula is an adult woman in red-bordered cream sari with black braid; Manasa is a regal adult deity in emerald with serpent canopy; Lakhindar is a young adult in white and vermilion. Row 1: emerald Manasa beside a lotus pond; Chand at a Shiva shrine; Manasa and Chand facing each other across a courtyard; empty merchant ships in a storm. Row 2: Behula and Lakhindar at their wedding; smith sealing an iron bridal chamber; small snake slipping through a pinhole at night; Behula grieving beside reclining Lakhindar. Row 3: Behula guiding a raft on the river; Behula petitioning in a celestial court; Lakhindar awake beside Behula at dawn; Chand offering flowers with his left hand before Manasa. No gore. Keep focal points centered in each cell, silhouettes clean.",
+    "generation": "built-in image_gen"
+  },
+  "chaitanya": {
+    "asset": "assets/illustrations/chaitanya.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Sri Chaitanya, a tall Bengali devotee with shaved head and saffron cloth in adulthood; respectful 15th–16th-century Nadia and Puri. Treat stories as hagiographic tradition.",
+    "prompt": "Use case: illustration-story. Produce ONE landscape 1536×1024 storybook atlas for a Bengali literature reader. EXACTLY FOUR COLUMNS and THREE ROWS (12 independent equal rectangular paintings), filling entire canvas. Straight hard grid boundaries exactly at 25%, 50%, 75% width and 33⅓%, 66⅔% height. Each cell a self-contained composition with centered subjects, safe to crop. Edge-to-edge, zero gutters, frames, caption bands, text, numbers, watermarks, or cross-cell overlaps. Original hand-painted watercolor and gouache with expressive fine ink, muted vivid mineral pigments, paper texture, believable anatomy and recognizable period clothing. Maintain character identity and costumes across panels. Sri Chaitanya, a tall Bengali devotee with shaved head and saffron cloth in adulthood; respectful 15th–16th-century Nadia and Puri. Treat stories as hagiographic tradition. Row 1, left to right: moonlit Navadvipa and riverside birth house; young Nimai studying palm-leaf grammar; Nimai teaching students in courtyard; grown Nimai meeting Ishvara Puri at Gaya. Row 2, left to right: devotee singing with companions at night; large kirtan procession with drums; renunciation and saffron robes; arrival by Jagannath temple at Puri. Row 3, left to right: journey through south Indian temple countryside; Ratha Yatra and wooden chariot; contemplative life in Puri with companions; later devotees preserving memories in manuscripts.",
+    "generation": "built-in image_gen"
+  },
+  "vaishnava-padavali": {
+    "asset": "assets/illustrations/vaishnava-padavali.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Bengali Vaishnava lyric reading journey. Consistent adult Radha in coral sari and adult Krishna with dark blue skin, golden dhoti and peacock feather; early Bengal and imagined Braj.",
+    "prompt": "Use case: illustration-story. Produce ONE landscape 1536×1024 storybook atlas for a Bengali literature reader. EXACTLY FOUR COLUMNS and THREE ROWS (12 independent equal rectangular paintings), filling entire canvas. Straight hard grid boundaries exactly at 25%, 50%, 75% width and 33⅓%, 66⅔% height. Each cell a self-contained composition with centered subjects, safe to crop. Edge-to-edge, zero gutters, frames, caption bands, text, numbers, watermarks, or cross-cell overlaps. Original hand-painted watercolor and gouache with expressive fine ink, muted vivid mineral pigments, paper texture, believable anatomy and recognizable period clothing. Maintain character identity and costumes across panels. Bengali Vaishnava lyric reading journey. Consistent adult Radha in coral sari and adult Krishna with dark blue skin, golden dhoti and peacock feather; early Bengal and imagined Braj. Row 1, left to right: Bengali singers with drum and cymbals; Radha glimpses Krishna by the Yamuna; Radha confides first love to a friend; Krishna plays flute beneath kadamba. Row 2, left to right: Radha walks through moonlit grove; monsoon journey toward meeting; Radha looks away in wounded pride; an intimate reconciliation beneath flowers. Row 3, left to right: Radha watches an empty road after departure; friends console Radha through a rainy night; a poet writes by oil lamp; community sings the verses in a courtyard.",
+    "generation": "built-in image_gen"
+  },
+  "khana": {
+    "asset": "assets/illustrations/khana.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Khana's sayings, medieval Bengali folk agricultural knowledge. Khana is an adult Bengali woman in ochre with a red-bordered sari, appearing as traditional storyteller only.",
+    "prompt": "Use case: illustration-story. Produce ONE landscape 1536×1024 storybook atlas for a Bengali literature reader. EXACTLY FOUR COLUMNS and THREE ROWS (12 independent equal rectangular paintings), filling entire canvas. Straight hard grid boundaries exactly at 25%, 50%, 75% width and 33⅓%, 66⅔% height. Each cell a self-contained composition with centered subjects, safe to crop. Edge-to-edge, zero gutters, frames, caption bands, text, numbers, watermarks, or cross-cell overlaps. Original hand-painted watercolor and gouache with expressive fine ink, muted vivid mineral pigments, paper texture, believable anatomy and recognizable period clothing. Maintain character identity and costumes across panels. Khana's sayings, medieval Bengali folk agricultural knowledge. Khana is an adult Bengali woman in ochre with a red-bordered sari, appearing as traditional storyteller only. Row 1, left to right: Khana listening to farmers beside a paddy; farmers listening to a proverb in village courtyard; elders observing clouds; farmers examining different soils. Row 2, left to right: preparing land with wooden plough; transplanting rice seedlings in rows; water flowing along a drainage channel; farm family tending banana plants. Row 3, left to right: village observes seasonal wind and rain; household stores grain dry in earthen bins; adult and child exchange sayings after harvest; older and younger farmers testing advice in a field.",
+    "generation": "built-in image_gen"
+  },
+  "chandravati": {
+    "asset": "assets/illustrations/chandravati.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Chandravati’s Bengali Ramayana and her literary legacy. Adult poet Chandravati in muted indigo sari at a Bengali riverside; Sita in rust-and-gold sari in epic scenes.",
+    "prompt": "Use case: illustration-story. Produce ONE landscape 1536×1024 storybook atlas for a Bengali literature reader. EXACTLY FOUR COLUMNS and THREE ROWS (12 independent equal rectangular paintings), filling entire canvas. Straight hard grid boundaries exactly at 25%, 50%, 75% width and 33⅓%, 66⅔% height. Each cell a self-contained composition with centered subjects, safe to crop. Edge-to-edge, zero gutters, frames, caption bands, text, numbers, watermarks, or cross-cell overlaps. Original hand-painted watercolor and gouache with expressive fine ink, muted vivid mineral pigments, paper texture, believable anatomy and recognizable period clothing. Maintain character identity and costumes across panels. Chandravati’s Bengali Ramayana and her literary legacy. Adult poet Chandravati in muted indigo sari at a Bengali riverside; Sita in rust-and-gold sari in epic scenes. Row 1, left to right: Bengali riverside village and a young poet; Dvija Bansidas recites verses to adult Chandravati; Chandravati writing beside a Shiva shrine; women gathering to hear a Ramayana. Row 2, left to right: Sita at her wedding; Sita and Rama in forest exile; Sita waiting under tree in Lanka; Sita returning to Ayodhya. Row 3, left to right: pregnant Sita abandoned near forest hermitage; Sita caring for two children at hermitage; Chandravati’s manuscript with loose leaves; Bengali readers and singers carrying on poem.",
+    "generation": "built-in image_gen"
+  },
+  "goraksha-vijay": {
+    "asset": "assets/illustrations/goraksha-vijay.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Bengali Nath yogi narrative. Goraksha is adult ascetic in rust with matted hair, teacher Mina is older gray-haired ascetic who wears court robes in Kadali. Keep court performers fully clothed.",
+    "prompt": "Use case: illustration-story. Produce ONE landscape 1536×1024 storybook atlas for a Bengali literature reader. EXACTLY FOUR COLUMNS and THREE ROWS (12 independent equal rectangular paintings), filling entire canvas. Straight hard grid boundaries exactly at 25%, 50%, 75% width and 33⅓%, 66⅔% height. Each cell a self-contained composition with centered subjects, safe to crop. Edge-to-edge, zero gutters, frames, caption bands, text, numbers, watermarks, or cross-cell overlaps. Original hand-painted watercolor and gouache with expressive fine ink, muted vivid mineral pigments, paper texture, believable anatomy and recognizable period clothing. Maintain character identity and costumes across panels. Bengali Nath yogi narrative. Goraksha is adult ascetic in rust with matted hair, teacher Mina is older gray-haired ascetic who wears court robes in Kadali. Keep court performers fully clothed. Row 1, left to right: Nath yogis seated at hermitage; Goraksha listens to his teacher Mina; Mina arrives in legendary Kadali; Mina absorbed by splendor of court. Row 2, left to right: Goraksha hears his teacher is in need; Goraksha journeys through forest; Goraksha joins a dance troupe as performer; troupe enters Kadali palace. Row 3, left to right: Goraksha drums in front of Mina; Mina recognizes disciple and reflects; teacher and pupil depart palace gate; both return to life of disciplined practice.",
+    "generation": "built-in image_gen"
+  },
+  "tohfa": {
+    "asset": "assets/illustrations/tohfa.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Alaol’s Tohfa, a 17th century Bengali Islamic didactic poem in Arakan, composed in a Persianate literary milieu. Represent values symbolically with ordinary people; avoid rendering sacred figures, or writing readable script.",
+    "prompt": "Use case: illustration-story. Produce ONE landscape 1536×1024 storybook atlas for a Bengali literature reader. EXACTLY FOUR COLUMNS and THREE ROWS (12 independent equal rectangular paintings), filling entire canvas. Straight hard grid boundaries exactly at 25%, 50%, 75% width and 33⅓%, 66⅔% height. Each cell a self-contained composition with centered subjects, safe to crop. Edge-to-edge, zero gutters, frames, caption bands, text, numbers, watermarks, or cross-cell overlaps. Original hand-painted watercolor and gouache with expressive fine ink, muted vivid mineral pigments, paper texture, believable anatomy and recognizable period clothing. Maintain character identity and costumes across panels. Alaol’s Tohfa, a 17th century Bengali Islamic didactic poem in Arakan, composed in a Persianate literary milieu. Represent values symbolically with ordinary people; avoid rendering sacred figures, or writing readable script. Row 1, left to right: Alaol writing by lamplight near an Arakan harbor; Bengali copyist studying a Persian manuscript; teacher conversing with pupils; person in quiet reflection. Row 2, left to right: row of worshippers seen from behind; merchant returning an overlooked coin; family offering a meal to a traveler; neighbors distributing grain. Row 3, left to right: two people calmly settling a disagreement; an elder counseling a family; scribe revising a page by lamplight; manuscript handed to next generation.",
+    "generation": "built-in image_gen"
+  },
+  "haft-paykar": {
+    "asset": "assets/illustrations/haft-paykar.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Alaol’s Saptapaykar (Haft Paykar), Bahram Gur frame story from Persian tradition, told as a manuscript in Arakan. Adult Bahram, dark beard and gold crown, identical throughout; seven separate color-coded episodes with adult princess storytellers.",
+    "prompt": "Use case: illustration-story. Produce ONE landscape 1536×1024 storybook atlas for a Bengali literature reader. EXACTLY FOUR COLUMNS and THREE ROWS (12 independent equal rectangular paintings), filling entire canvas. Straight hard grid boundaries exactly at 25%, 50%, 75% width and 33⅓%, 66⅔% height. Each cell a self-contained composition with centered subjects, safe to crop. Edge-to-edge, zero gutters, frames, caption bands, text, numbers, watermarks, or cross-cell overlaps. Original hand-painted watercolor and gouache with expressive fine ink, muted vivid mineral pigments, paper texture, believable anatomy and recognizable period clothing. Maintain character identity and costumes across panels. Alaol’s Saptapaykar (Haft Paykar), Bahram Gur frame story from Persian tradition, told as a manuscript in Arakan. Adult Bahram, dark beard and gold crown, identical throughout; seven separate color-coded episodes with adult princess storytellers. Row 1, left to right: Arakan poet at desk with manuscript; Bahram visits a hall of seven portraits; Bahram crowned as king in Persian court; architects surveying seven pavilions. Row 2, left to right: black domed chamber and princess telling a story; yellow domed chamber and princess telling a story; green domed chamber and princess telling a story; red domed chamber and princess telling a story. Row 3, left to right: turquoise domed chamber and princess telling a story; sandalwood tan chamber and princess telling a story; white domed chamber and princess telling a story; king hearing petitioners in court.",
+    "generation": "built-in image_gen"
+  },
+  "mahabharata": {
+    "asset": "assets/illustrations/mahabharata.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Kashiram Das’s Bengali Mahabharata, epic then transmission. Consistent Pandavas, Draupadi, Krishna and court; historicized sacred epic, no gore.",
+    "prompt": "Use case: illustration-story. Produce ONE landscape 1536×1024 storybook atlas for a Bengali literature reader. EXACTLY FOUR COLUMNS and THREE ROWS (12 independent equal rectangular paintings), filling entire canvas. Straight hard grid boundaries exactly at 25%, 50%, 75% width and 33⅓%, 66⅔% height. Each cell a self-contained composition with centered subjects, safe to crop. Edge-to-edge, zero gutters, frames, caption bands, text, numbers, watermarks, or cross-cell overlaps. Original hand-painted watercolor and gouache with expressive fine ink, muted vivid mineral pigments, paper texture, believable anatomy and recognizable period clothing. Maintain character identity and costumes across panels. Kashiram Das’s Bengali Mahabharata, epic then transmission. Consistent Pandavas, Draupadi, Krishna and court; historicized sacred epic, no gore. Row 1, left to right: Bengali poet Kashiram Das writing palm leaves; Pandava and Kaurava youths in training courtyard; adult Draupadi’s svayamvara archery contest; court at a dice game watched by Draupadi. Row 2, left to right: Pandavas and Draupadi departing for exile; the family in a forest hermitage; Krishna in embassy before the Kaurava court; Krishna counsels Arjuna on stationary chariot. Row 3, left to right: two opposing armies with banners from far away; survivors grieving on hushed battlefield; Yudhishthira hearing petitions in court; Bengali assembly listening to epic recitation.",
+    "generation": "built-in image_gen"
+  },
+  "ramayana": {
+    "asset": "assets/illustrations/ramayana.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Krittibas’s Bengali Ramayana. Keep Rama with mustard dhoti and bow, Sita in maroon sari, Hanuman as traditionally depicted, Lakshmana in green.",
+    "prompt": "Use case: illustration-story. Produce ONE landscape 1536×1024 storybook atlas for a Bengali literature reader. EXACTLY FOUR COLUMNS and THREE ROWS (12 independent equal rectangular paintings), filling entire canvas. Straight hard grid boundaries exactly at 25%, 50%, 75% width and 33⅓%, 66⅔% height. Each cell a self-contained composition with centered subjects, safe to crop. Edge-to-edge, zero gutters, frames, caption bands, text, numbers, watermarks, or cross-cell overlaps. Original hand-painted watercolor and gouache with expressive fine ink, muted vivid mineral pigments, paper texture, believable anatomy and recognizable period clothing. Maintain character identity and costumes across panels. Krittibas’s Bengali Ramayana. Keep Rama with mustard dhoti and bow, Sita in maroon sari, Hanuman as traditionally depicted, Lakshmana in green. Row 1, left to right: Krittibas writing in Bengal; Rama lifts the bow at Janaka’s court; Rama Sita and Lakshmana leave Ayodhya; the trio at forest dwelling. Row 2, left to right: golden deer near the hermitage; Ravana’s chariot carries Sita away non-graphically; Hanuman offers Rama’s ring to Sita beneath tree; companions build bridge over sea. Row 3, left to right: Rama and Ravana’s chariots face each other from afar; Sita Rama and Lakshmana depart Lanka; lamps welcome the royal party to Ayodhya; villagers reciting Krittibasi Ramayana.",
+    "generation": "built-in image_gen"
+  },
+  "shunyapurana": {
+    "asset": "assets/illustrations/shunyapurana.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Ramai Pandit’s Shunyapurana, Bengali Dharma worship. Medieval Bengal, origin imagery symbolic, no readable text.",
+    "prompt": "Use case: illustration-story. Produce ONE landscape 1536×1024 storybook atlas for a Bengali literature reader. EXACTLY FOUR COLUMNS and THREE ROWS (12 independent equal rectangular paintings), filling entire canvas. Straight hard grid boundaries exactly at 25%, 50%, 75% width and 33⅓%, 66⅔% height. Each cell a self-contained composition with centered subjects, safe to crop. Edge-to-edge, zero gutters, frames, caption bands, text, numbers, watermarks, or cross-cell overlaps. Original hand-painted watercolor and gouache with expressive fine ink, muted vivid mineral pigments, paper texture, believable anatomy and recognizable period clothing. Maintain character identity and costumes across panels. Ramai Pandit’s Shunyapurana, Bengali Dharma worship. Medieval Bengal, origin imagery symbolic, no readable text. Row 1, left to right: rural ritual specialist with palm-leaf bundle; moonlit open water symbolizing void; faint horizon and a forming earth in symbolic vista; medieval Bengali shrine associated with Dharma. Row 2, left to right: family arranging ritual offerings; ritual leader reciting beside lamps; copyist placing prose and verse on leaves; village community gathering near shrine. Row 3, left to right: symbolic contrast of cosmic sky and earthen altar; singers and ritual participants together; two readers comparing manuscript leaves; modern reader quietly opening an archived manuscript.",
+    "generation": "built-in image_gen"
+  },
+  "dharmamangal": {
+    "asset": "assets/illustrations/dharmamangal.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Bengali Dharmamangal, Lau Sen story in the Ghanaram tradition. Lau Sen is an adult hero in red-and-ivory; Kalinga and Rarh are literary geography. No gore.",
+    "prompt": "Use case: illustration-story. Produce ONE landscape 1536×1024 storybook atlas for a Bengali literature reader. EXACTLY FOUR COLUMNS and THREE ROWS (12 independent equal rectangular paintings), filling entire canvas. Straight hard grid boundaries exactly at 25%, 50%, 75% width and 33⅓%, 66⅔% height. Each cell a self-contained composition with centered subjects, safe to crop. Edge-to-edge, zero gutters, frames, caption bands, text, numbers, watermarks, or cross-cell overlaps. Original hand-painted watercolor and gouache with expressive fine ink, muted vivid mineral pigments, paper texture, believable anatomy and recognizable period clothing. Maintain character identity and costumes across panels. Bengali Dharmamangal, Lau Sen story in the Ghanaram tradition. Lau Sen is an adult hero in red-and-ivory; Kalinga and Rarh are literary geography. No gore. Row 1, left to right: red-soil Rarh Bengal with Dharma shrine; elders offering prayers for child; young adult Lau Sen prepares to serve king; king’s court and rival Mahamad. Row 2, left to right: Lau Sen leads caravan of soldiers through countryside; distant opposing banners on open plains; Lau Sen faces an ordeal at a holy site; hero prays at dusk during ordeal. Row 3, left to right: mythic westward sunrise as symbolic miracle; Lau Sen returns before royal court; villagers at Dharma worship; Bengali poet Ghanaram with a manuscript.",
+    "generation": "built-in image_gen"
+  },
+  "annadamangal": {
+    "asset": "assets/illustrations/annadamangal.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Bharatchandra Ray’s Annadamangal, three literary sections, 18th century Bengal. Annapurna with rice bowl; Vidya adult princess in indigo, Sundar adult prince in saffron. No violence or explicit romance.",
+    "prompt": "Use case: illustration-story. Produce ONE landscape 1536×1024 storybook atlas for a Bengali literature reader. EXACTLY FOUR COLUMNS and THREE ROWS (12 independent equal rectangular paintings), filling entire canvas. Straight hard grid boundaries exactly at 25%, 50%, 75% width and 33⅓%, 66⅔% height. Each cell a self-contained composition with centered subjects, safe to crop. Edge-to-edge, zero gutters, frames, caption bands, text, numbers, watermarks, or cross-cell overlaps. Original hand-painted watercolor and gouache with expressive fine ink, muted vivid mineral pigments, paper texture, believable anatomy and recognizable period clothing. Maintain character identity and costumes across panels. Bharatchandra Ray’s Annadamangal, three literary sections, 18th century Bengal. Annapurna with rice bowl; Vidya adult princess in indigo, Sundar adult prince in saffron. No violence or explicit romance. Row 1, left to right: Bharatchandra reciting before Raja Krishnachandra; Annapurna holding bowl and ladle; Shiva receiving food from Annapurna; rural Bengali ferry beside river. Row 2, left to right: Vidya in her palace; Sundar travels toward city; flower seller carrying a message; Vidya and Sundar meeting modestly. Row 3, left to right: Sundar facing the king in court; Annapurna above a Bengal landscape; Mansingh and Bhabananda in courtly reception; poet’s manuscript read to a Bengali audience.",
+    "generation": "built-in image_gen"
+  },
+  "jangnama": {
+    "asset": "assets/illustrations/jangnama.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Bengali Jangnama tradition centered on Karbala as lament. Never depict Imam Husayn, his family, or revered religious figures; use landscape, objects, scribes and ordinary readers. No bodies, blood or battle action.",
+    "prompt": "Use case: illustration-story. Produce ONE landscape 1536×1024 storybook atlas for a Bengali literature reader. EXACTLY FOUR COLUMNS and THREE ROWS (12 independent equal rectangular paintings), filling entire canvas. Straight hard grid boundaries exactly at 25%, 50%, 75% width and 33⅓%, 66⅔% height. Each cell a self-contained composition with centered subjects, safe to crop. Edge-to-edge, zero gutters, frames, caption bands, text, numbers, watermarks, or cross-cell overlaps. Original hand-painted watercolor and gouache with expressive fine ink, muted vivid mineral pigments, paper texture, believable anatomy and recognizable period clothing. Maintain character identity and costumes across panels. Bengali Jangnama tradition centered on Karbala as lament. Never depict Imam Husayn, his family, or revered religious figures; use landscape, objects, scribes and ordinary readers. No bodies, blood or battle action. Row 1, left to right: Bengali scribe opening a puthi; a Persian manuscript alongside Bengali leaves; an empty caravan road in desert; unopened letters on a textile. Row 2, left to right: empty tents on the Karbala plain; distant Euphrates beyond dry ground; empty water vessel in sand; lowered unmarked banner at sunset. Row 3, left to right: lamplight and mourning textiles; Bengali gathering hearing a respectful recitation; three distinct manuscript bundles in library; listener passes a puthi to younger reader.",
+    "generation": "built-in image_gen"
+  },
+  "rigveda": {
+    "asset": "assets/illustrations/rigveda.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Rigveda study guide, artistic evocation of early Vedic northwestern South Asia and later oral preservation, no later temples or idols. Sacred figures via nature and symbolic scenes; no lettering.",
+    "prompt": "Use case: illustration-story. Produce ONE landscape 1536×1024 storybook atlas for a Bengali literature reader. EXACTLY FOUR COLUMNS and THREE ROWS (12 independent equal rectangular paintings), filling entire canvas. Straight hard grid boundaries exactly at 25%, 50%, 75% width and 33⅓%, 66⅔% height. Each cell a self-contained composition with centered subjects, safe to crop. Edge-to-edge, zero gutters, frames, caption bands, text, numbers, watermarks, or cross-cell overlaps. Original hand-painted watercolor and gouache with expressive fine ink, muted vivid mineral pigments, paper texture, believable anatomy and recognizable period clothing. Maintain character identity and costumes across panels. Rigveda study guide, artistic evocation of early Vedic northwestern South Asia and later oral preservation, no later temples or idols. Sacred figures via nature and symbolic scenes; no lettering. Row 1, left to right: early Vedic landscape and river settlement; teacher recites seated with attentive students; Agni represented by a ritual fire; Indra represented by storm over dry land. Row 2, left to right: Dawn approaches in bands of rosy light; Varuna represented by stars and river; ritual vessels and stones associated with Soma; rivers winding across an open plain. Row 3, left to right: cosmic person as abstract silhouette of stars; dark primordial water under open sky; oral teacher and students with careful gestures; later palm-leaf manuscript preserved by a reader.",
+    "generation": "built-in image_gen"
+  },
+  "lipimala": {
+    "asset": "assets/illustrations/lipimala.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Ramram Basu’s Lipimala, 1802 Bengali prose and letter-writing, early colonial Calcutta with quiet historical realism. Keep Ramram adult Bengali scholar in white muslin and simple shawl; no legible writing.",
+    "prompt": "Use case: illustration-story. Produce ONE landscape 1536×1024 storybook atlas for a Bengali literature reader. EXACTLY FOUR COLUMNS and THREE ROWS (12 independent equal rectangular paintings), filling entire canvas. Straight hard grid boundaries exactly at 25%, 50%, 75% width and 33⅓%, 66⅔% height. Each cell a self-contained composition with centered subjects, safe to crop. Edge-to-edge, zero gutters, frames, caption bands, text, numbers, watermarks, or cross-cell overlaps. Original hand-painted watercolor and gouache with expressive fine ink, muted vivid mineral pigments, paper texture, believable anatomy and recognizable period clothing. Maintain character identity and costumes across panels. Ramram Basu’s Lipimala, 1802 Bengali prose and letter-writing, early colonial Calcutta with quiet historical realism. Keep Ramram adult Bengali scholar in white muslin and simple shawl; no legible writing. Row 1, left to right: Calcutta riverfront circa 1802; adult Ramram Basu with a quill at desk; Fort William College classroom from period; Bengali teacher showing a formal written salutation. Row 2, left to right: scribe addressing a folded letter; messenger delivering letter to a household; two scholars comparing formal and familiar language; printing room with wooden cases of Bengali type. Row 3, left to right: inked press producing a page; reader comparing a letter and returning reply; students reading early Bengali prose; archivist conserving a fragile early printed volume.",
+    "generation": "built-in image_gen"
+  },
+  "durgeshnandini": {
+    "asset": "assets/illustrations/durgeshnandini.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Bankim's historical romance, Mughal-era eastern India; adult Jagat Singh in indigo, Tilottama cream with red border, Ayesha teal.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Bankim's historical romance, Mughal-era eastern India; adult Jagat Singh in indigo, Tilottama cream with red border, Ayesha teal. Row 1: sweeping view of Bengal forts; temple meeting by lamplight; Tilottama with her household in fort; Pathan encampment seen from distant walls. Row 2: fort courtyard in turmoil; Jagat Singh wounded and resting; Ayesha watches over him; Osman speaks tensely with Ayesha. Row 3: separated Tilottama waits; negotiation at the rival camp; Jagat Singh reunites with Tilottama; Ayesha alone in a quiet pavilion.",
+    "generation": "built-in image_gen"
+  },
+  "sitaram": {
+    "asset": "assets/illustrations/sitaram.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Bankim’s Sitaram, late Mughal Bengal; Sitaram Ray an adult ruler with dark moustache; Shree plain russet robe; Nanda ivory sari.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Bankim’s Sitaram, late Mughal Bengal; Sitaram Ray an adult ruler with dark moustache; Shree plain russet robe; Nanda ivory sari. Row 1: river village in late Mughal Bengal; Sitaram hears an appeal for help; tense gathering outside a prison; Sitaram’s growing household and followers. Row 2: a ruler seated in formal assembly; Nanda speaking gravely inside the palace; Shree withdrawing in a quiet woodland shrine; Sitaram anxiously looking for Shree. Row 3: officials conferring near fort gates; household facing loss at twilight; Sitaram under guard in a dark passage; abandoned palace courtyard at dawn.",
+    "generation": "built-in image_gen"
+  },
+  "devi-chaudhurani": {
+    "asset": "assets/illustrations/devi-chaudhurani.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Bankim’s Devi Chaudhurani; late 18th-century Bengal; Prafulla in white red-border sari, Bhavani Pathak elderly teacher, Brajeshwar in cream.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Bankim’s Devi Chaudhurani; late 18th-century Bengal; Prafulla in white red-border sari, Bhavani Pathak elderly teacher, Brajeshwar in cream. Row 1: young adult Prafulla with mother; rejected at affluent marital household gate; Prafulla travels beside a forest; Bhavani Pathak receives Prafulla. Row 2: Prafulla studying and training at quiet retreat; Prafulla governing from a river barge; provisions distributed at a river landing; British colonial boat on wide river. Row 3: tense encounter at the riverbank; Prafulla speaking with Brajeshwar; Prafulla enters household in simple sari; Prafulla managing household with calm authority.",
+    "generation": "built-in image_gen"
+  },
+  "rajani": {
+    "asset": "assets/illustrations/rajani.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Bankim's Rajani, 19th-century Bengal; blind adult flower seller Rajani with long black braid and muted yellow sari, Shachindra an educated young man; Labangalata in red.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Bankim's Rajani, 19th-century Bengal; blind adult flower seller Rajani with long black braid and muted yellow sari, Shachindra an educated young man; Labangalata in red. Row 1: Rajani sorting flowers by touch; Rajani on city lane with basket; well-off household receiving flowers; Shachindra and Rajani in conversation. Row 2: Labangalata seated in courtyard; Rajani considering proposed marriage; Rajani at a riverbank at night; Amarnath listening to Rajani. Row 3: family examining an inheritance document; Rajani and Labangalata speak; Shachindra and Rajani reunite; quiet garden around Rajani’s new household.",
+    "generation": "built-in image_gen"
+  },
+  "indira": {
+    "asset": "assets/illustrations/indira.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Bankim’s Indira, 19th-century Bengal; Indira an adult Bengali woman with dark braid in russet sari; Upendra with white dhoti.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Bankim’s Indira, 19th-century Bengal; Indira an adult Bengali woman with dark braid in russet sari; Upendra with white dhoti. Row 1: Indira at paternal household; Indira carried in palanquin on forest road; abandoned palanquin as Indira emerges; Indira alone at dawn by trees. Row 2: woman takes in exhausted Indira; Indira serving in Bengali kitchen; Subhashini and Indira confiding; male guest arrives at household. Row 3: Indira recognizes Upendra; Indira considers whether to reveal herself; husband and wife in honest conversation; Indira reunited with family.",
+    "generation": "built-in image_gen"
+  },
+  "anandamath": {
+    "asset": "assets/illustrations/anandamath.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Bankim’s Anandamath literary scenes, famine-era Bengal circa 1770; Mahendra in white, Kalyani red-bordered sari, ascetic Satyananda gray-haired; contemplative no gore.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Bankim’s Anandamath literary scenes, famine-era Bengal circa 1770; Mahendra in white, Kalyani red-bordered sari, ascetic Satyananda gray-haired; contemplative no gore. Row 1: famine-stricken deserted Bengal village; Mahendra and Kalyani leave carrying infant; separated family at night in forest; Satyananda opens secluded monastery. Row 2: ascetics gathered before symbolic motherland images; Mahendra considers vow at forest refuge; Shanti adopts ascetic disguise; Kalyani in sheltered recovery. Row 3: distant troops and banners at dawn; Mahendra reunited with Kalyani; doctor and teacher counseling Satyananda; ascetic walks into dawn beyond monastery.",
+    "generation": "built-in image_gen"
+  },
+  "chaturanga": {
+    "asset": "assets/illustrations/chaturanga.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Tagore’s Chaturanga, early 20th-century Bengal; Sribilas bespectacled observant, Sachish slender intense, Damini widowed adult with expressive dark eyes, Jagmohan older reformer.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Tagore’s Chaturanga, early 20th-century Bengal; Sribilas bespectacled observant, Sachish slender intense, Damini widowed adult with expressive dark eyes, Jagmohan older reformer. Row 1: four figures suggested across quiet Bengali courtyard; Jagmohan helping a poor neighbor; Sachish speaking with his uncle; Jagmohan aiding plague-stricken neighborhood. Row 2: Sachish in grief at empty doorway; devotional circle led by Lilananda; Damini observing a gathering from doorway; Damini and Sachish amid rocky shoreline. Row 3: Sribilas listening to Damini; spiritual seeker alone under vast sky; Damini and Sribilas make a home; Sribilas remembering Damini by a lamp.",
+    "generation": "built-in image_gen"
+  },
+  "charitrahin": {
+    "asset": "assets/illustrations/charitrahin.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Sarat Chandra’s Charitrahin, early 20th century Bengal; adult Sabitri in simple ivory, Satish youthful cream, Kiranmayi red border, Upendra bespectacled, Dibakar youthful.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Sarat Chandra’s Charitrahin, early 20th century Bengal; adult Sabitri in simple ivory, Satish youthful cream, Kiranmayi red border, Upendra bespectacled, Dibakar youthful. Row 1: Calcutta boarding house courtyard; Sabitri attending to household work; Sabitri and Satish talk privately; gossip among boarding residents. Row 2: Kiranmayi in a household shadowed by illness; Upendra visits bereaved Kiranmayi; Kiranmayi speaking with young Dibakar; two passengers on Arakan steamer. Row 3: Kiranmayi in unfamiliar lodging; separation at a dim doorway; Sabitri caring for an ill household; somber unresolved faces around a lamp.",
+    "generation": "built-in image_gen"
+  },
+  "shesh-prashna": {
+    "asset": "assets/illustrations/shesh-prashna.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Sarat Chandra's Shesh Prashna, early 20th-century Agra Bengali circle; Kamal adult in terracotta sari with confident gaze, Ajit slim in pale coat, Ashubabu elderly.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Sarat Chandra's Shesh Prashna, early 20th-century Agra Bengali circle; Kamal adult in terracotta sari with confident gaze, Ajit slim in pale coat, Ashubabu elderly. Row 1: Agra skyline and Bengali gathering; Kamal enters intellectual salon; guests arguing courteously with Kamal; Kamal and Ajit in a period motorcar. Row 2: Kamal at a modest rented room; Kamal sewing for a living; Haren and a group at ashram; Kamal discussing women's choices. Row 3: community serving during an epidemic; Ashubabu and Kamal in serious conversation; Ajit and Kamal walking side by side; open road beyond Agra at sunset.",
+    "generation": "built-in image_gen"
+  },
+  "datta": {
+    "asset": "assets/illustrations/datta.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Sarat Chandra’s Datta in rural colonial Bengal; Bijoya independent adult in wine red sari; Naren thoughtful physician wearing cream; Bilas angular; Rasbehari older.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Sarat Chandra’s Datta in rural colonial Bengal; Bijoya independent adult in wine red sari; Naren thoughtful physician wearing cream; Bilas angular; Rasbehari older. Row 1: old friends make a promise; Bijoya takes responsibility for household; Rasbehari and Bilas in discussion; Naren walks across Bengal farmland. Row 2: Bijoya and Naren first speak; Naren brings an old scientific microscope; Bilas grows suspicious; Bijoya reads family correspondence. Row 3: an argument in estate courtyard; Bijoya talks with Dayal; truth emerges in household gathering; Naren and Bijoya marry in modest setting.",
+    "generation": "built-in image_gen"
+  },
+  "grihadaha": {
+    "asset": "assets/illustrations/grihadaha.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Sarat Chandra’s Grihadaha Bengal and Bihar; Achala in indigo, Mahim reserved, Suresh animated, Mrinal practical adult in rust.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Sarat Chandra’s Grihadaha Bengal and Bihar; Achala in indigo, Mahim reserved, Suresh animated, Mrinal practical adult in rust. Row 1: educated Bengali drawing room; Achala listens to Mahim; Suresh presses his concerns; Achala and Mahim’s wedding. Row 2: Achala enters a rural home; Mrinal working beside Achala; quiet marital distance in village; village house burns seen from a distance. Row 3: travelers at night railway station; Achala faces Suresh in unfamiliar lodging; quiet aftermath of illness; Mahim and Achala at separate thresholds.",
+    "generation": "built-in image_gen"
+  },
+  "aranyak": {
+    "asset": "assets/illustrations/aranyak.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Bibhutibhushan’s Aranyak; forest estate in Bihar; Satyacharan a Bengali adult in cream with book, Jugolprasad wiry, Raju Pandey older, Bhanumati adult in red.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Bibhutibhushan’s Aranyak; forest estate in Bihar; Satyacharan a Bengali adult in cream with book, Jugolprasad wiry, Raju Pandey older, Bhanumati adult in red. Row 1: Satyacharan arrives at forest outpost; moonlit expanse of woodland; Raju Pandey in humble hut; Jugolprasad tending plants by forest pool. Row 2: women gathering forest produce; Satyacharan listens to a poor cultivator; forest community under trees; Bhanumati and Satyacharan beside hillside. Row 3: old forest ruler’s burial site beneath tree; surveying land for cultivation; new fields where trees once stood; Satyacharan looks back at disappearing forest.",
+    "generation": "built-in image_gen"
+  },
+  "ichhamati": {
+    "asset": "assets/illustrations/ichhamati.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Bibhutibhushan’s Ichhamati. Rural nineteenth-century Bengal and indigo works. Bhawani Barujje is an older Bengali man in ivory with a short gray beard; Tilu an adult Bengali woman in cream sari with red border and long black braid; Khoka their little son. Gaya is an adult Bengali WOMAN wearing an orange cotton sari and long black hair, while Prasanna is a middle-aged Bengali MAN with short hair, black moustache, cream dhoti and shirt. Row 1: wide Ichhamati River at dawn; historic indigo factory and fields in distance; villagers talking in courtyard; Bhawani at riverside dwelling. Row 2: Tilu caring for young child; Bhawani walks with little Khoka; laborers speak to an indigo overseer; village hears news of resistance. Row 3: woman Gaya in orange sari speaking to man Prasanna near the former indigo house; old colonial grave amid returning vegetation; meandering river and fields after planter rule recedes; father Bhawani and son Khoka contemplate the sky beside the river.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Bibhutibhushan’s Ichhamati. Rural nineteenth-century Bengal and indigo works. Bhawani Barujje is an older Bengali man in ivory with a short gray beard; Tilu an adult Bengali woman in cream sari with red border and long black braid; Khoka their little son. Gaya is an adult Bengali WOMAN wearing an orange cotton sari and long black hair, while Prasanna is a middle-aged Bengali MAN with short hair, black moustache, cream dhoti and shirt. Row 1: wide Ichhamati River at dawn; historic indigo factory and fields in distance; villagers talking in courtyard; Bhawani at riverside dwelling. Row 2: Tilu caring for young child; Bhawani walks with little Khoka; laborers speak to an indigo overseer; village hears news of resistance. Row 3: woman Gaya in orange sari speaking to man Prasanna near the former indigo house; old colonial grave amid returning vegetation; meandering river and fields after planter rule recedes; father Bhawani and son Khoka contemplate the sky beside the river.",
+    "generation": "built-in image_gen"
+  },
+  "aparajito": {
+    "asset": "assets/illustrations/aparajito.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Bibhutibhushan’s Aparajito novel, companion to Pather Panchali; Apu thin with dark curious eyes, starts boy, grows into adult; Sarbajaya cream sari, adult Aparna in gold, Kajal is child.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Bibhutibhushan’s Aparajito novel, companion to Pather Panchali; Apu thin with dark curious eyes, starts boy, grows into adult; Sarbajaya cream sari, adult Aparna in gold, Kajal is child. Row 1: Apu and Sarbajaya in sacred city lane; child Apu looking out over river ghats; Bengali schoolroom with adolescent Apu; Sarbajaya says goodbye at village doorstep. Row 2: Apu studies with lamp in Calcutta; Sarbajaya alone at rural courtyard; young adult Apu starts writing at desk; Apu meets Aparna at rural marriage gathering. Row 3: Apu and Aparna in modest city home; grief-stricken Apu beside empty bed; Apu and his son Kajal together; adult Apu and child Kajal part before a long road.",
+    "generation": "built-in image_gen"
+  },
+  "kuhelika": {
+    "asset": "assets/illustrations/kuhelika.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Nazrul’s Kuhelika (1931), anti-colonial political novel; Jahangir a thoughtful young Bengali in muted indigo and Pramatta in pale khadi.",
+    "prompt": "Generate ONE 1536×1024 landscape atlas for a Bengali novel study guide. EXACTLY FOUR COLUMNS by THREE ROWS, 12 independent equal-size paintings with unbroken straight boundaries at 25/50/75% width and 33⅓/66⅔% height. Edge-to-edge with zero gutters, frames or margin. No letters, numbers, legible inscriptions or watermark. Fine hand-painted watercolor and gouache with ink, textured paper and culturally plausible clothing. Keep repeat characters recognizable and safely centered in each panel. Non-graphic treatment of suffering and loss. Nazrul’s Kuhelika (1931), anti-colonial political novel; Jahangir a thoughtful young Bengali in muted indigo and Pramatta in pale khadi. Row 1: Calcutta student lodging; Jahangir listening from the edge of the common room; the young man’s wealthy rural family home; Jahangir leaving familiar surroundings. Row 2: Jahangir meets Pramatta; youths in earnest political discussion; diverse Bengalis gather in solidarity; a private moment of affection under trees. Row 3: unlit Calcutta lane under colonial surveillance; isolated Jahangir reading correspondence; a group’s hope giving way to grief in empty room; Jahangir alone with morning mist outside.",
+    "generation": "built-in image_gen"
+  },
+  "mrityukshudha": {
+    "asset": "assets/illustrations/mrityukshudha.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Nazrul’s Mrityukshudha (1930), Krishnanagar; widowed Mejo Bou in muted brick-red, young Pakale in gray, Kurshi in blue, Ansar and Ruby adults.",
+    "prompt": "Generate ONE 1536×1024 landscape atlas for a Bengali novel study guide. EXACTLY FOUR COLUMNS by THREE ROWS, 12 independent equal-size paintings with unbroken straight boundaries at 25/50/75% width and 33⅓/66⅔% height. Edge-to-edge with zero gutters, frames or margin. No letters, numbers, legible inscriptions or watermark. Fine hand-painted watercolor and gouache with ink, textured paper and culturally plausible clothing. Keep repeat characters recognizable and safely centered in each panel. Non-graphic treatment of suffering and loss. Nazrul’s Mrityukshudha (1930), Krishnanagar; widowed Mejo Bou in muted brick-red, young Pakale in gray, Kurshi in blue, Ansar and Ruby adults. Row 1: street and poor houses in Krishnanagar; widows and children around a nearly empty cooking pot; young Pakale returns to hungry household; Mejo Bou argues for survival. Row 2: Pakale and Kurshi speaking at a doorway; women at a Christian neighborhood courtyard; Ruby in her father’s home; Ruby grieving in widowhood. Row 3: Ansar taken away under colonial custody; sick Ansar rests in a distant room; Ruby tends him quietly; an empty chair and lamp after loss.",
+    "generation": "built-in image_gen"
+  },
+  "bandhanhara": {
+    "asset": "assets/illustrations/bandhanhara.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Nazrul’s Bandhanhara, a 1927 epistolary novel, period military barracks and Bengali households, no writing readable. Young Nurul Huda, women Rabeya, Mahbuba, Sofia and Sahasika recurring.",
+    "prompt": "Generate ONE 1536×1024 landscape atlas for a Bengali novel study guide. EXACTLY FOUR COLUMNS by THREE ROWS, 12 independent equal-size paintings with unbroken straight boundaries at 25/50/75% width and 33⅓/66⅔% height. Edge-to-edge with zero gutters, frames or margin. No letters, numbers, legible inscriptions or watermark. Fine hand-painted watercolor and gouache with ink, textured paper and culturally plausible clothing. Keep repeat characters recognizable and safely centered in each panel. Non-graphic treatment of suffering and loss. Nazrul’s Bandhanhara, a 1927 epistolary novel, period military barracks and Bengali households, no writing readable. Young Nurul Huda, women Rabeya, Mahbuba, Sofia and Sahasika recurring. Row 1: soldier Nurul Huda at a desk; letter crosses distance in rural postbag; Rabeya opens a letter in Bengali house; Mahbuba reflects at doorway. Row 2: Sofia and older female confidante converse; Sahasika writes her candid reply; Nurul Huda with comrades in barracks; households discussing marriage. Row 3: letters collected on low table; woman alone after difficult news; two correspondents look at separate horizons; bundle of letters near dawn window.",
+    "generation": "built-in image_gen"
+  },
+  "anowara": {
+    "asset": "assets/illustrations/anowara.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Najibar Rahman’s Anowara; early 20th-century rural Bengali Muslim society. Anowara adult in pale maroon sari, Nurul Islam young man in off-white. Literary reading motifs.",
+    "prompt": "Generate ONE 1536×1024 landscape atlas for a Bengali novel study guide. EXACTLY FOUR COLUMNS by THREE ROWS, 12 independent equal-size paintings with unbroken straight boundaries at 25/50/75% width and 33⅓/66⅔% height. Edge-to-edge with zero gutters, frames or margin. No letters, numbers, legible inscriptions or watermark. Fine hand-painted watercolor and gouache with ink, textured paper and culturally plausible clothing. Keep repeat characters recognizable and safely centered in each panel. Non-graphic treatment of suffering and loss. Najibar Rahman’s Anowara; early 20th-century rural Bengali Muslim society. Anowara adult in pale maroon sari, Nurul Islam young man in off-white. Literary reading motifs. Row 1: rural Bengal homestead; young Anowara in family courtyard; women exchanging news; Nurul Islam in village lane. Row 2: conversation at a domestic threshold; family members discussing marriage; Anowara weighing advice by a window; two people separated by a courtyard. Row 3: community watching a household doorway; misty pond and solitary figure; veranda conversation at dusk; Bengali readers with an early printed novel.",
+    "generation": "built-in image_gen"
+  },
+  "premer-samadhi": {
+    "asset": "assets/illustrations/premer-samadhi.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Najibar Rahman’s Premer Samadhi, Bengali novel of household and educational reform c. 1900. Mariam young adult Bengali woman in soft maroon cotton sari with covered shoulders and dark braid; Motiur Rahman adult Bengali man with narrow face, black side-parted hair, pale beige kurta. Mahmudah Khatun elderly woman with gray hair and a dark red bordered sari. No readable text. Folkloric final episode depicted respectfully. Row 1: early Bengali press putting out books; adult Mariam learns with her tutor Motiur across a low table; aunt Mahmudah discusses books with Mariam; Motiur and Mariam at their modest Bengali Muslim wedding, sitting apart with families. Row 2: Motiur reading at a modest warehouse with jute bales and rice sacks; colonial officer offers a job to Motiur; Motiur teaching in a rural classroom instead; working families bring their children to the village school. Row 3: old men in neighboring village debating expansion of school; blind Motiur reaches toward adult Mariam as she sits by his side; Mariam praying near Tahmina’s little rural shrine with a single flower in bloom; adult Mariam and Motiur look at one another as he recovers sight at dawn.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Najibar Rahman’s Premer Samadhi, Bengali novel of household and educational reform c. 1900. Mariam young adult Bengali woman in soft maroon cotton sari with covered shoulders and dark braid; Motiur Rahman adult Bengali man with narrow face, black side-parted hair, pale beige kurta. Mahmudah Khatun elderly woman with gray hair and a dark red bordered sari. No readable text. Folkloric final episode depicted respectfully. Row 1: early Bengali press putting out books; adult Mariam learns with her tutor Motiur across a low table; aunt Mahmudah discusses books with Mariam; Motiur and Mariam at their modest Bengali Muslim wedding, sitting apart with families. Row 2: Motiur reading at a modest warehouse with jute bales and rice sacks; colonial officer offers a job to Motiur; Motiur teaching in a rural classroom instead; working families bring their children to the village school. Row 3: old men in neighboring village debating expansion of school; blind Motiur reaches toward adult Mariam as she sits by his side; Mariam praying near Tahmina’s little rural shrine with a single flower in bloom; adult Mariam and Motiur look at one another as he recovers sight at dawn.",
+    "generation": "built-in image_gen"
+  },
+  "narai": {
+    "asset": "assets/illustrations/narai.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Shawkat Ali’s Narai around the Tebhaga movement in rural Bengal. Fulsari adult widow in red-brown sari and young son; ordinary laborers, period rural landscape.",
+    "prompt": "Generate ONE 1536×1024 landscape atlas for a Bengali novel study guide. EXACTLY FOUR COLUMNS by THREE ROWS, 12 independent equal-size paintings with unbroken straight boundaries at 25/50/75% width and 33⅓/66⅔% height. Edge-to-edge with zero gutters, frames or margin. No letters, numbers, legible inscriptions or watermark. Fine hand-painted watercolor and gouache with ink, textured paper and culturally plausible clothing. Keep repeat characters recognizable and safely centered in each panel. Non-graphic treatment of suffering and loss. Shawkat Ali’s Narai around the Tebhaga movement in rural Bengal. Fulsari adult widow in red-brown sari and young son; ordinary laborers, period rural landscape. Row 1: sharecroppers at dawn in northern Bengal; Fulsari and young child by village home; quiet widow in an emptied household; widow and child tending small resources. Row 2: wealthy men conferring in estate veranda; Fulsari walking resolutely with basket; grain left in a landlord’s courtyard; peasants gather to discuss crop shares. Row 3: women exchange news beside paddy; community shares rice and shelter; Fulsari standing among cultivators; grain harvest under an uncertain sky.",
+    "generation": "built-in image_gen"
+  },
+  "warish": {
+    "asset": "assets/illustrations/warish.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Shawkat Ali’s Warish. Colonial Bengal and Partition remembered through ordinary families; a symbolic guide to documented themes, no sensationalized riots.",
+    "prompt": "Generate ONE 1536×1024 landscape atlas for a Bengali novel study guide. EXACTLY FOUR COLUMNS by THREE ROWS, 12 independent equal-size paintings with unbroken straight boundaries at 25/50/75% width and 33⅓/66⅔% height. Edge-to-edge with zero gutters, frames or margin. No letters, numbers, legible inscriptions or watermark. Fine hand-painted watercolor and gouache with ink, textured paper and culturally plausible clothing. Keep repeat characters recognizable and safely centered in each panel. Non-graphic treatment of suffering and loss. Shawkat Ali’s Warish. Colonial Bengal and Partition remembered through ordinary families; a symbolic guide to documented themes, no sensationalized riots. Row 1: ancestral homestead in undivided Bengal; quiet market of mixed communities; elders around a family album; late colonial official notices at railway. Row 2: uneasy neighbors at separate doors; adults pack to leave village; crowded station with luggage; family crossing river on small ferry. Row 3: displaced family finds unfamiliar shelter; an older adult looks at ancestral photograph; two generations converse by lamp; open borderland landscape with two paths.",
+    "generation": "built-in image_gen"
+  },
+  "kalo-borof": {
+    "asset": "assets/illustrations/kalo-borof.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Mahmudul Haque’s Kalo Borof. Adult Abdul Khaleq, narrow face and simple glasses; same as bright young boy Poka without glasses. Adult wife Rekha in muted sari. Rural and small-town 20th-century Bengal.",
+    "prompt": "Generate ONE 1536×1024 landscape atlas for a Bengali novel study guide. EXACTLY FOUR COLUMNS by THREE ROWS, 12 independent equal-size paintings with unbroken straight boundaries at 25/50/75% width and 33⅓/66⅔% height. Edge-to-edge with zero gutters, frames or margin. No letters, numbers, legible inscriptions or watermark. Fine hand-painted watercolor and gouache with ink, textured paper and culturally plausible clothing. Keep repeat characters recognizable and safely centered in each panel. Non-graphic treatment of suffering and loss. Mahmudul Haque’s Kalo Borof. Adult Abdul Khaleq, narrow face and simple glasses; same as bright young boy Poka without glasses. Adult wife Rekha in muted sari. Rural and small-town 20th-century Bengal. Row 1: adult Khaleq sits at dim window; wife Rekha notices his distance; adult shares memories in quiet evening; child Poka on village path. Row 2: Poka plays with companions beside pond; child listens to elders at homestead; division and departure at railway station; adult gazes at river with remembered past. Row 3: wife waits beside tea in present; child peers at distant railway; adult fingers a keepsake from childhood; two landscapes remembered and present with solitary adult.",
+    "generation": "built-in image_gen"
+  },
+  "khelaghar": {
+    "asset": "assets/illustrations/khelaghar.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Mahmudul Haque’s Khelaghar, Bangladesh 1971, literary atmosphere. Educated adult narrator Yakub and adult Rehana in muted sari, respectful treatment of wartime trauma.",
+    "prompt": "Generate ONE 1536×1024 landscape atlas for a Bengali novel study guide. EXACTLY FOUR COLUMNS by THREE ROWS, 12 independent equal-size paintings with unbroken straight boundaries at 25/50/75% width and 33⅓/66⅔% height. Edge-to-edge with zero gutters, frames or margin. No letters, numbers, legible inscriptions or watermark. Fine hand-painted watercolor and gouache with ink, textured paper and culturally plausible clothing. Keep repeat characters recognizable and safely centered in each panel. Non-graphic treatment of suffering and loss. Mahmudul Haque’s Khelaghar, Bangladesh 1971, literary atmosphere. Educated adult narrator Yakub and adult Rehana in muted sari, respectful treatment of wartime trauma. Row 1: quiet Bengali rural house in 1971; teacher Yakub looking out from shade; Rehana arrives withdrawn at shelter; two people keeping respectful distance. Row 2: quiet domestic routine by clay stove; conversation through door at dusk; silence in the aftermath of violence shown symbolically; Rehana outside by rain-wet veranda. Row 3: brief companionship beneath trees; distant wartime unease on roads; adult woman beside shuttered room; empty house after fragile interval.",
+    "generation": "built-in image_gen"
+  },
+  "jibon-amar-bon": {
+    "asset": "assets/illustrations/jibon-amar-bon.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Mahmudul Haque’s Jibon Amar Bon, Dhaka in the lead-up to 1971, Khoka thoughtful adult in brown, Ranju his younger sister, friends Nilu and Nibir adults. No graphic violence.",
+    "prompt": "Generate ONE 1536×1024 landscape atlas for a Bengali novel study guide. EXACTLY FOUR COLUMNS by THREE ROWS, 12 independent equal-size paintings with unbroken straight boundaries at 25/50/75% width and 33⅓/66⅔% height. Edge-to-edge with zero gutters, frames or margin. No letters, numbers, legible inscriptions or watermark. Fine hand-painted watercolor and gouache with ink, textured paper and culturally plausible clothing. Keep repeat characters recognizable and safely centered in each panel. Non-graphic treatment of suffering and loss. Mahmudul Haque’s Jibon Amar Bon, Dhaka in the lead-up to 1971, Khoka thoughtful adult in brown, Ranju his younger sister, friends Nilu and Nibir adults. No graphic violence. Row 1: uneasy Dhaka street; Khoka in a cramped household; Ranju and Khoka talk at home; Khoka meets his friends. Row 2: Nibir handles a guitar; adults discussing the future in a room; uneasy gathering of university-age adults; news travels through neighborhood. Row 3: quiet sister at window; Khoka walks through tense city after rainfall; scattered family belongings in dim room; unsure observer at threshold of troubled city.",
+    "generation": "built-in image_gen"
+  },
+  "dibaratrir-kabya": {
+    "asset": "assets/illustrations/dibaratrir-kabya.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Manik Bandyopadhyay’s Dibaratrir Kabya. Heramba an adult Bengali male professor with dark side-parted hair in cream. Supriya an adult Bengali woman in brick-red sari with neat long braid. Ananda is a young ADULT WOMAN with long dark hair, feminine face, blue Bengali sari and fitted long-sleeved blouse, including while dancing; keep her distinct from Supriya. Malati is Ananda’s older female relative in a muted brown sari. Respectful allegorical art, regional village and coastal Bengali setting with early twentieth-century clothing. Row 1: daylight around rural police outpost; male Heramba arrives at Supriya’s home; Supriya tends kitchen flame; Heramba and Supriya speak in veranda. Row 2: shadowed colonial police room; Heramba approaches coastal house and temple; adult woman Ananda in blue sari talks with older woman Malati; male Heramba and adult woman Ananda talk by moonlight. Row 3: Supriya reappears wearing brick red; Supriya and Ananda at separate thresholds; blue-sari Ananda performs a classical dance alone gracefully at night; temple in distant nighttime glow with nobody visibly in danger.",
+    "prompt": "Create ONE 1536×1024 landscape atlas of EXACTLY 4 columns by 3 rows, 12 equal rectangular independent illustrations. Boundaries exactly 25%, 50%, 75% width and 33⅓%, 66⅔% height. Full bleed, no gutters, frames, margins, labels, digits, inscriptions or watermark. Original Bengali literary illustration in fine watercolor and gouache with ink and textured paper, believable period costume; the same faces in each appearance, safe centered composition in each panel. Convey violence through expressions and aftermath, without gore or weapons detail. Manik Bandyopadhyay’s Dibaratrir Kabya. Heramba an adult Bengali male professor with dark side-parted hair in cream. Supriya an adult Bengali woman in brick-red sari with neat long braid. Ananda is a young ADULT WOMAN with long dark hair, feminine face, blue Bengali sari and fitted long-sleeved blouse, including while dancing; keep her distinct from Supriya. Malati is Ananda’s older female relative in a muted brown sari. Respectful allegorical art, regional village and coastal Bengali setting with early twentieth-century clothing. Row 1: daylight around rural police outpost; male Heramba arrives at Supriya’s home; Supriya tends kitchen flame; Heramba and Supriya speak in veranda. Row 2: shadowed colonial police room; Heramba approaches coastal house and temple; adult woman Ananda in blue sari talks with older woman Malati; male Heramba and adult woman Ananda talk by moonlight. Row 3: Supriya reappears wearing brick red; Supriya and Ananda at separate thresholds; blue-sari Ananda performs a classical dance alone gracefully at night; temple in distant nighttime glow with nobody visibly in danger.",
+    "generation": "built-in image_gen"
+  },
+  "janani-manik": {
+    "asset": "assets/illustrations/janani-manik.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Manik Bandyopadhyay’s Janani. Shyama in brown sari, Shital tall and dark-haired, adolescent Bidhan in pale clothes, Bakul a child. Early 20th-century Bengal.",
+    "prompt": "Generate ONE 1536×1024 landscape atlas for a Bengali novel study guide. EXACTLY FOUR COLUMNS by THREE ROWS, 12 independent equal-size paintings with unbroken straight boundaries at 25/50/75% width and 33⅓/66⅔% height. Edge-to-edge with zero gutters, frames or margin. No letters, numbers, legible inscriptions or watermark. Fine hand-painted watercolor and gouache with ink, textured paper and culturally plausible clothing. Keep repeat characters recognizable and safely centered in each panel. Non-graphic treatment of suffering and loss. Manik Bandyopadhyay’s Janani. Shyama in brown sari, Shital tall and dark-haired, adolescent Bidhan in pale clothes, Bakul a child. Early 20th-century Bengal. Row 1: young mother beside an infant; Shyama manages a modest household; Shital worries over household money; child Bidhan studies beside lamp. Row 2: Shyama and daughter Bakul in courtyard; absent man’s empty desk and accounts; mother makes hard household choices; mother and children at relative’s country home. Row 3: Bidhan studies as family waits; Shyama supports aging family member; Bidhan returns as a working young adult; older Shyama looking at the next generation.",
+    "generation": "built-in image_gen"
+  },
+  "kashbaner-kanya": {
+    "asset": "assets/illustrations/kashbaner-kanya.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Shamsuddin Abul Kalam’s Kashbaner Kanya, lowland southern Bengal. Adult boatman Hosen, adult Mehersjan, Kanu Shikdar folk singer, Jobeda adult in red bordered sari; Sakhina younger modestly clothed.",
+    "prompt": "Generate ONE 1536×1024 landscape atlas for a Bengali novel study guide. EXACTLY FOUR COLUMNS by THREE ROWS, 12 independent equal-size paintings with unbroken straight boundaries at 25/50/75% width and 33⅓/66⅔% height. Edge-to-edge with zero gutters, frames or margin. No letters, numbers, legible inscriptions or watermark. Fine hand-painted watercolor and gouache with ink, textured paper and culturally plausible clothing. Keep repeat characters recognizable and safely centered in each panel. Non-graphic treatment of suffering and loss. Shamsuddin Abul Kalam’s Kashbaner Kanya, lowland southern Bengal. Adult boatman Hosen, adult Mehersjan, Kanu Shikdar folk singer, Jobeda adult in red bordered sari; Sakhina younger modestly clothed. Row 1: open tidal river and white kash grass; Hosen rows a ferry; Hosen and Sakhina in separate rural courtyards; Sakhina’s wedding seen from a distance. Row 2: Hosen encounters Meherjan at river landing; Hosen leaves a familiar bank; Kanu singing at village gathering; Jobeda listens across the courtyard. Row 3: Jobeda at unhappy household doorway; Kanu and Jobeda speak beside trees; Kanu hands over keys to Mansab Sardar; Kanu heads toward the lowlands with laborers.",
+    "generation": "built-in image_gen"
+  },
+  "sangshaptak": {
+    "asset": "assets/illustrations/sangshaptak.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Shahidullah Kaiser’s Sangshaptak in rural Bengal through famine and Partition. Hurmati adult woman in earth red; Leku lean cultivator, Sikandar bespectacled teacher, Ramzan well-dressed man.",
+    "prompt": "ONE 1536×1024 landscape illustration sheet. Exactly FOUR equal columns and THREE equal rows, 12 self-contained hand-painted watercolor-and-gouache scenes with fine Bengali book illustration ink. Grid boundaries precisely 25/50/75 percent across and 33⅓/66⅔ percent down. Edge-to-edge, no margins, gutters, frames, readable text, numbers or watermark. Keep repeated characters visually consistent and center important subjects. Convey loss through atmosphere without blood, injuries or cruelty. Shahidullah Kaiser’s Sangshaptak in rural Bengal through famine and Partition. Hurmati adult woman in earth red; Leku lean cultivator, Sikandar bespectacled teacher, Ramzan well-dressed man. Row 1: broad rural Bengal and shared village lanes; Leku works the paddy; Hurmati stands apart near village lane; Sikandar in classroom. Row 2: influential men in courtyard; children of different families at riverside; market in wartime shortage; famine survivors exchange food. Row 3: news of political division reaches village; neighbors face the possibility of departure; Hurmati and Leku amid social upheaval; wide dawn over village survivors.",
+    "generation": "built-in image_gen"
+  },
+  "chander-amabasya": {
+    "asset": "assets/illustrations/chander-amabasya.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Syed Waliullah’s Chander Amabasya. Young schoolteacher Aref Ali in muted cream; respected Qader older in charcoal, eastern Bengal village, psychological noir.",
+    "prompt": "ONE 1536×1024 landscape illustration sheet. Exactly FOUR equal columns and THREE equal rows, 12 self-contained hand-painted watercolor-and-gouache scenes with fine Bengali book illustration ink. Grid boundaries precisely 25/50/75 percent across and 33⅓/66⅔ percent down. Edge-to-edge, no margins, gutters, frames, readable text, numbers or watermark. Keep repeated characters visually consistent and center important subjects. Convey loss through atmosphere without blood, injuries or cruelty. Syed Waliullah’s Chander Amabasya. Young schoolteacher Aref Ali in muted cream; respected Qader older in charcoal, eastern Bengal village, psychological noir. Row 1: winter moon above village; Aref steps out at night; bamboo grove with cloth-covered still figure, no injury; shadowed Qader glimpsed by teacher. Row 2: Aref at river bank; Aref sleepless in room; village elders near the patron’s doorway; Aref and Qader speak tensely. Row 3: teacher at school distracted; Aref reports in village police station; officials question the teacher; teacher alone in dim custody.",
+    "generation": "built-in image_gen"
+  },
+  "kando-nadi-kando": {
+    "asset": "assets/illustrations/kando-nadi-kando.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Syed Waliullah’s Kando Nadi Kando. Eastern Bengal, river steamers, layered memories. Taborak Bhuiyan older serious man; Muhammad Mustafa young magistrate; Khodeja adult in muted teal.",
+    "prompt": "ONE 1536×1024 landscape illustration sheet. Exactly FOUR equal columns and THREE equal rows, 12 self-contained hand-painted watercolor-and-gouache scenes with fine Bengali book illustration ink. Grid boundaries precisely 25/50/75 percent across and 33⅓/66⅔ percent down. Edge-to-edge, no margins, gutters, frames, readable text, numbers or watermark. Keep repeated characters visually consistent and center important subjects. Convey loss through atmosphere without blood, injuries or cruelty. Syed Waliullah’s Kando Nadi Kando. Eastern Bengal, river steamers, layered memories. Taborak Bhuiyan older serious man; Muhammad Mustafa young magistrate; Khodeja adult in muted teal. Row 1: travelers board a river steamer; Taborak speaks to unnamed listener; river port of Kumurdanga in recalled days; Mustafa arrives as young government official. Row 2: Khodeja at domestic threshold; townspeople note a silting river; women hear an ambiguous sound at dawn; quiet group gathered by water. Row 3: inert algae-covered pond without body; Mustafa in fever remembers the past; riverboat listener considers what he heard; port seen from steamer through fog.",
+    "generation": "built-in image_gen"
+  },
+  "shabnam": {
+    "asset": "assets/illustrations/shabnam.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Syed Mujtaba Ali’s Shabnam, period Kabul in late 1920s; adult Bengali Majnun slim with round glasses, Afghan Shabnam elegant adult in sapphire and veil; Abd ur Rahman older Afghan.",
+    "prompt": "ONE 1536×1024 landscape illustration sheet. Exactly FOUR equal columns and THREE equal rows, 12 self-contained hand-painted watercolor-and-gouache scenes with fine Bengali book illustration ink. Grid boundaries precisely 25/50/75 percent across and 33⅓/66⅔ percent down. Edge-to-edge, no margins, gutters, frames, readable text, numbers or watermark. Keep repeated characters visually consistent and center important subjects. Convey loss through atmosphere without blood, injuries or cruelty. Syed Mujtaba Ali’s Shabnam, period Kabul in late 1920s; adult Bengali Majnun slim with round glasses, Afghan Shabnam elegant adult in sapphire and veil; Abd ur Rahman older Afghan. Row 1: Kabul mountain city at dusk; newcomer Majnun in a Kabul household; Shabnam and Majnun meet during literate gathering; conversation about Persian poetry. Row 2: Majnun studies Persian notebook; Shabnam smiles during private conversation; lovers share a quiet farewell look; Abd ur Rahman beside the narrator. Row 3: city in political upheaval at distance; vacant courtyard after disappearance; Majnun searching a mountain pass; dew on leaves beside a lonely narrator.",
+    "generation": "built-in image_gen"
+  },
+  "borof-gola-nodi": {
+    "asset": "assets/illustrations/borof-gola-nodi.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Zahir Raihan’s Borof Gola Nodi in mid-century urban East Pakistan. Mariam adult in ochre, Mahmud thin newspaper worker, teenage Hasina modestly dressed. Poor rented house, rain as atmosphere, no detailed disaster injuries.",
+    "prompt": "ONE 1536×1024 landscape illustration sheet. Exactly FOUR equal columns and THREE equal rows, 12 self-contained hand-painted watercolor-and-gouache scenes with fine Bengali book illustration ink. Grid boundaries precisely 25/50/75 percent across and 33⅓/66⅔ percent down. Edge-to-edge, no margins, gutters, frames, readable text, numbers or watermark. Keep repeated characters visually consistent and center important subjects. Convey loss through atmosphere without blood, injuries or cruelty. Zahir Raihan’s Borof Gola Nodi in mid-century urban East Pakistan. Mariam adult in ochre, Mahmud thin newspaper worker, teenage Hasina modestly dressed. Poor rented house, rain as atmosphere, no detailed disaster injuries. Row 1: modest rented house on crowded street; Mariam and Hasina inside narrow room; Mahmud arrives from newspaper work; family divides a simple meal. Row 2: Mariam weighs affection and duty; family discusses affluent marriage proposal; Mariam newly married in unfamiliar household; Mariam returns to the cramped family house. Row 3: rain enters cracks above a lamp; Mahmud at newspaper office overnight; house collapse aftermath at dawn, no injured persons; Mahmud alone outside the silent home.",
+    "generation": "built-in image_gen"
+  },
+  "janani-osman": {
+    "asset": "assets/illustrations/janani-osman.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Shawkat Osman’s Janani, pre-1940s rural Bengal, Daria Bibi adult in earthy violet with children; Azhar Khan, Yakub, Chandra Kotal. Respectful view of poverty and coercion, symbolic ending.",
+    "prompt": "ONE 1536×1024 landscape illustration sheet. Exactly FOUR equal columns and THREE equal rows, 12 self-contained hand-painted watercolor-and-gouache scenes with fine Bengali book illustration ink. Grid boundaries precisely 25/50/75 percent across and 33⅓/66⅔ percent down. Edge-to-edge, no margins, gutters, frames, readable text, numbers or watermark. Keep repeated characters visually consistent and center important subjects. Convey loss through atmosphere without blood, injuries or cruelty. Shawkat Osman’s Janani, pre-1940s rural Bengal, Daria Bibi adult in earthy violet with children; Azhar Khan, Yakub, Chandra Kotal. Respectful view of poverty and coercion, symbolic ending. Row 1: storm washes over village Maheshdanga; Daria Bibi with children inside a hut; Azhar Khan’s village household; Daria manages scarce food. Row 2: neighbor Chandra Kotal at rural threshold; women talk beside courtyard well; families in contrasting households; Daria alone after bereavement. Row 3: older village men at a closed veranda; mother shielding child from social pressure; oil lamp near dark doorway after tragedy; children and empty path at first light.",
+    "generation": "built-in image_gen"
+  },
+  "malyaban": {
+    "asset": "assets/illustrations/malyaban.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Jibanananda Das’s Malyaban, period Calcutta urban domestic life, adult Malyaban thin with soft eyes and glasses, Utpala adult in teal sari, young daughter Manu, adult visitor Amaresh.",
+    "prompt": "ONE 1536×1024 landscape illustration sheet. Exactly FOUR equal columns and THREE equal rows, 12 self-contained hand-painted watercolor-and-gouache scenes with fine Bengali book illustration ink. Grid boundaries precisely 25/50/75 percent across and 33⅓/66⅔ percent down. Edge-to-edge, no margins, gutters, frames, readable text, numbers or watermark. Keep repeated characters visually consistent and center important subjects. Convey loss through atmosphere without blood, injuries or cruelty. Jibanananda Das’s Malyaban, period Calcutta urban domestic life, adult Malyaban thin with soft eyes and glasses, Utpala adult in teal sari, young daughter Manu, adult visitor Amaresh. Row 1: Calcutta lane in winter; Malyaban alone downstairs; Utpala upstairs with Manu; family at dinner amid silence. Row 2: Malyaban walks alone near a pond; Utpala talks with visitor Amaresh; Malyaban listens from separate room; couple in an uneasy conversation. Row 3: young Manu near staircase between rooms; a solitary birthday candle by window; dreamlike empty city and birds; Malyaban wakeful by a lamp in winter night.",
+    "generation": "built-in image_gen"
+  },
+  "alaler-ghorer-dulal": {
+    "asset": "assets/illustrations/alaler-ghorer-dulal.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Peary Chand Mitra’s Alaler Gharer Dulal, 19th-century colonial Calcutta and Baidyabati. Babu Ram elderly, spoiled young Motilal with red shawl, gentle Ramlal white, go-between Thakchacha with henna beard, benefactor Baradaprasad.",
+    "prompt": "ONE 1536×1024 landscape illustration sheet. Exactly FOUR equal columns and THREE equal rows, 12 self-contained hand-painted watercolor-and-gouache scenes with fine Bengali book illustration ink. Grid boundaries precisely 25/50/75 percent across and 33⅓/66⅔ percent down. Edge-to-edge, no margins, gutters, frames, readable text, numbers or watermark. Keep repeated characters visually consistent and center important subjects. Convey loss through atmosphere without blood, injuries or cruelty. Peary Chand Mitra’s Alaler Gharer Dulal, 19th-century colonial Calcutta and Baidyabati. Babu Ram elderly, spoiled young Motilal with red shawl, gentle Ramlal white, go-between Thakchacha with henna beard, benefactor Baradaprasad. Row 1: wealthy Baidyabati mansion; Babu Ram indulges Motilal; schoolroom where Motilal resists learning; Motilal and pleasure-seeking companions. Row 2: Thakchacha whispers advice to Babu Ram; Baradaprasad assists a neighbor; Ramlal studies diligently; Babu Ram’s household mourns his death. Row 3: Motilal surveys inheritance papers; reckless business venture by river; Motilal ruined and alone; older repentant Motilal faces welcoming household.",
+    "generation": "built-in image_gen"
+  },
+  "pradoshe-prakritajan": {
+    "asset": "assets/illustrations/pradoshe-prakritajan.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Shawkat Ali’s Pradoshe Prakritajan, late Sena-era Bengal told from commoners’ viewpoint. Shyamanga potter dark and lean, Lilabati in muted yellow, Mayabati in green, Basudev leads rural workshop.",
+    "prompt": "ONE 1536×1024 landscape illustration sheet. Exactly FOUR equal columns and THREE equal rows, 12 self-contained hand-painted watercolor-and-gouache scenes with fine Bengali book illustration ink. Grid boundaries precisely 25/50/75 percent across and 33⅓/66⅔ percent down. Edge-to-edge, no margins, gutters, frames, readable text, numbers or watermark. Keep repeated characters visually consistent and center important subjects. Convey loss through atmosphere without blood, injuries or cruelty. Shawkat Ali’s Pradoshe Prakritajan, late Sena-era Bengal told from commoners’ viewpoint. Shyamanga potter dark and lean, Lilabati in muted yellow, Mayabati in green, Basudev leads rural workshop. Row 1: Atrai River and late medieval village; Shyamanga at potter’s wheel; kiln and clay vessels; Lilabati at a village threshold. Row 2: Mayabati converses in courtyard; an ascetic with companions on dusty road; ordinary villagers and hands kneading clay; privileged men pass artisan workshop. Row 3: rumor of political change reaches village; family gathers few belongings; figures travel between settlements; pottery and village silhouettes at twilight.",
+    "generation": "built-in image_gen"
+  },
+  "teish-nombor-toilochitro": {
+    "asset": "assets/illustrations/teish-nombor-toilochitro.jpg",
+    "columns": 4,
+    "rows": 3,
+    "note": {
+      "en": "These illustrated scenes follow the learning cards. Precise faces, complexions, body shapes and costume colours are artistic interpretations where no appearance passage is cited here; they are not claims about the author’s wording. Poem images are visual metaphors.",
+      "bn": "ছবিগুলো পাঠকার্ড অনুসরণ করে। এখানে চেহারার নির্দিষ্ট পাঠ-উৎস দেওয়া না থাকলে মুখ, গাত্রবর্ণ, গড়ন ও পোশাকের রং শিল্পীর ব্যাখ্যা; লেখকের নির্দিষ্ট বর্ণনার দাবি নয়। কবিতার ছবি ভাব ও চিত্রকল্পের রূপায়ণ।"
+    },
+    "sources": [],
+    "bible": "Alauddin Al Azad’s Teish Nombor Toilochitro, mid-century Dhaka and Karachi. Zehed (Zahid) slim young Bengali painter with dark wave of hair, Chhobi adult in dusty rose dress, Mujtaba thoughtful fellow artist.",
+    "prompt": "ONE 1536×1024 landscape illustration sheet. Exactly FOUR equal columns and THREE equal rows, 12 self-contained hand-painted watercolor-and-gouache scenes with fine Bengali book illustration ink. Grid boundaries precisely 25/50/75 percent across and 33⅓/66⅔ percent down. Edge-to-edge, no margins, gutters, frames, readable text, numbers or watermark. Keep repeated characters visually consistent and center important subjects. Convey loss through atmosphere without blood, injuries or cruelty. Alauddin Al Azad’s Teish Nombor Toilochitro, mid-century Dhaka and Karachi. Zehed (Zahid) slim young Bengali painter with dark wave of hair, Chhobi adult in dusty rose dress, Mujtaba thoughtful fellow artist. Row 1: Karachi gallery with visitors before luminous oil painting; Zahid reacts to exhibition prize; earlier days in a modest art studio; painters discussing their work. Row 2: Zahid meets Chhobi in domestic light; Zahid sketches at window; Mujtaba ruminates by canvas; Chhobi makes ordinary life in small household. Row 3: portrait of motherhood on easel, no inscription; Zahid amidst exhibition guests feels far away; Zahid returns to Dhaka along quiet street; Chhobi opens the door to welcome Zahid.",
+    "generation": "built-in image_gen"
   }
 }
