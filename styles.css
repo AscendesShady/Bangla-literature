@@ -32,3 +32,27 @@
  #reader .reader-bottom button{padding:7px 9px;min-height:44px}
  #card-counter{font-size:11px}
 }
+
+/* Portrait vertical reader: scroll down through cards, swipe sideways for the next story. */
+#vreader{position:fixed;inset:0;z-index:15;background:var(--paper);display:flex;justify-content:center}
+#vreader>*{max-width:520px}
+#v-pager{position:absolute;inset:0;max-width:none;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior:contain}
+#v-pager::-webkit-scrollbar,.v-story::-webkit-scrollbar{display:none}
+.v-story{flex:0 0 100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always;overflow-y:auto;scroll-snap-type:y mandatory;scrollbar-width:none;overscroll-behavior:contain;display:flex;flex-direction:column;align-items:center}
+.v-card{flex:0 0 100%;width:min(100%,520px);scroll-snap-align:start;scroll-snap-stop:always;display:flex;flex-direction:column;padding-top:calc(70px + env(safe-area-inset-top));overflow:hidden}
+.v-card .scene-visual{margin:0 14px;aspect-ratio:9/8;height:auto;border-radius:18px;box-shadow:0 6px 22px #0002}
+.v-txt{flex:1;min-height:0;padding:16px 70px 24px 22px;display:flex;flex-direction:column;gap:8px;overflow:hidden}
+.v-txt h3{font:600 clamp(21px,3.4dvh,27px)/1.2 Georgia,Bangla,serif}.v-txt h3 .bn{display:block;font:500 .72em Bangla,sans-serif;color:var(--muted);margin-top:4px}
+.v-txt p{font-size:clamp(14px,2dvh,16px);line-height:1.75;margin:0}.v-txt p+p{border-top:1px solid var(--line);margin-top:6px;padding-top:6px}
+.v-cover{justify-content:center;gap:12px;padding:calc(70px + env(safe-area-inset-top)) 22px 30px}.v-cover .scene-visual{margin:0}
+.v-cover h1{font:600 30px/1.2 Bangla,Georgia,serif}.v-cover h2{font:italic 400 17px Georgia,serif;color:var(--muted)}
+.v-cue{font:600 12px 'Segoe UI',sans-serif;letter-spacing:1px;color:var(--teal);animation:vbob 1.4s infinite}@keyframes vbob{50%{transform:translateY(5px)}}
+.v-end{justify-content:center;align-items:center;text-align:center;gap:14px;padding:30px}
+#vreader[data-lang=en] .bn,#vreader[data-lang=bn] .en{display:none}
+#v-top{position:absolute;top:0;left:50%;transform:translateX(-50%);width:100%;z-index:3;padding:max(10px,env(safe-area-inset-top)) 12px 6px;background:linear-gradient(var(--paper) 70%,#faf7ef00);pointer-events:none}
+#v-top button{pointer-events:auto}
+#v-bars{display:flex;gap:3px}#v-bars i{flex:1;height:3px;border-radius:3px;background:var(--line)}#v-bars i.on{background:var(--teal)}
+.v-row{display:flex;align-items:center;gap:6px;margin-top:6px}.v-title{flex:1;min-width:0}.v-title b{display:block;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.v-title span,#v-count{font-size:11px;color:var(--muted)}
+#v-rail{position:absolute;right:max(10px,calc(50% - 250px));bottom:max(60px,env(safe-area-inset-bottom));z-index:3;display:flex;flex-direction:column;gap:12px}
+#v-rail button{width:46px;height:46px;min-height:46px;padding:0;border-radius:50%;border:0;background:#fffdf6;box-shadow:0 2px 10px #0003;font-size:20px}#v-rail button[aria-pressed=true]{color:var(--red)}
+@media(prefers-reduced-motion:reduce){.v-cue{animation:none}}

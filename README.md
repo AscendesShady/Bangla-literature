@@ -25,7 +25,7 @@ No server, API key, npm build, database or paid service is required. The reposit
 
 ## Android APK
 
-The local `Bangla-Literature.apk` (version 1.0.6) is a signed universal installer for phones and tablets running Android 9 or newer. All 97 readings and illustrations are included for offline reading. Install over the previous APK to keep progress. The website package does not contain the APK.
+The local `Bangla-Literature.apk` (version 1.0.7) is a signed universal installer for phones and tablets running Android 9 or newer. All 97 readings and illustrations are included for offline reading. Install over the previous APK to keep progress. The website package does not contain the APK.
 
 The Android app checks for a newer release when it opens online. You can also tap **Check for update** near **Export progress**. The app opens GitHub for a newer signed installer when available. Android and browser progress are stored separately; export and import a JSON backup to move it.
 
